@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  mysql:
+    image: mariadb/server
+    command: --default-authentication-plugin=mysql_native_password
+#        working_dir: /application
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=captura_electoral
+      - MYSQL_USER=captura_electoral
+      - MYSQL_PASSWORD=captura_electoral
+    ports:
+      - "3306:3306"
+  web:
+    build: .
+    command:
+      - ./dockerize/wait-for-it.sh
+      - mysql:3306
+      - --
+      - ./dockerize/execute.sh
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+    links:
+      - mysql
