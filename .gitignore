@@ -87,3 +87,5 @@ db.sqlite3
 =======
 .idea
 .env
+
+dockerize/db_data/
