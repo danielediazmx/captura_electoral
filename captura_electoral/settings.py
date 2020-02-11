@@ -40,6 +40,12 @@ INSTALLED_APPS = [
     'adminlte3',
     'adminlte3_theme',
     'apps.dashboard',
+    'apps.ubicacion',
+    'apps.grupo',
+    'apps.organizacion',
+    'apps.persona',
+    'apps.usuario',
+    'django_filters'
 ]
 
 MIDDLEWARE = [

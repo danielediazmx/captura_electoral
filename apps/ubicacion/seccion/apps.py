@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class SeccionConfig(AppConfig):
-    name = 'apps.seccion'
+    name = 'apps.ubicacion.seccion'

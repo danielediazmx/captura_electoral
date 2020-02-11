@@ -1,5 +1,5 @@
 from django.db import models
-from apps.estado.models import Estado
+from apps.ubicacion.estado.models import Estado
 
 
 # Create your models here.
