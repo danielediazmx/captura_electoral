@@ -11,9 +11,12 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import env_file
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+ENV = env_file.get()
 
 
 # Quick-start development settings - unsuitable for production
@@ -84,12 +87,12 @@ WSGI_APPLICATION = 'captura_electoral.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'captura_electoral',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'mysql',
-        'PORT': 3306,
+        'ENGINE': ENV['DB_ENGINE'],
+        'NAME': ENV['DB_NAME'],
+        'USER': ENV['DB_USER'],
+        'PASSWORD': ENV['DB_PASS'],
+        'HOST': ENV['DB_HOST'],
+        'PORT': ENV['DB_PORT'],
     }
 }
 

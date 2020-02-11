@@ -14,6 +14,8 @@ services:
       - MYSQL_PASSWORD=captura_electoral
     ports:
       - "3306:3306"
+    networks: 
+      - default
   web:
     build: .
     command:
@@ -29,3 +31,9 @@ services:
       - mysql
     links:
       - mysql
+    networks: 
+      - default
+
+networks:
+  default:
+    driver: bridge
