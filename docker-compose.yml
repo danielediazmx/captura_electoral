@@ -4,6 +4,8 @@ services:
   mysql:
     image: mariadb/server
     command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./dockerize/db_data:/var/lib/mysql
 #        working_dir: /application
     environment:
       - MYSQL_ROOT_PASSWORD=root
