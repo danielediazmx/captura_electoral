@@ -1,5 +1,5 @@
 from django.db import models
-from apps.municipio.models import Municipio
+from apps.ubicacion.municipio.models import Municipio
 
 
 # Create your models here.

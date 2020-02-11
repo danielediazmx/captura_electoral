@@ -1,9 +1,9 @@
 from django.db import models
-from apps.estado.models import Estado
-from apps.municipio.models import Municipio
+from apps.ubicacion.estado.models import Estado
+from apps.ubicacion.municipio.models import Municipio
 from apps.grupo.models import Grupo
 from apps.organizacion.models import Organizacion
-from apps.localidad.models import Localidad
+from apps.ubicacion.localidad.models import Localidad
 
 
 # Create your models here
@@ -18,11 +18,11 @@ class Persona(models.Model):
     estado = models.ForeignKey(Estado, on_delete=models.CASCADE)
     municipio = models.ForeignKey(Municipio, on_delete=models.CASCADE)
     localidad=models.ForeignKey(Localidad, on_delete=models.CASCADE)
-    correo=models.CharField(max_length=100)
-    facebook = models.CharField(max_length=100)
-    whattsapp = models.CharField(max_length=100)
-    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE)
-    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE)
+    correo=models.EmailField(max_length=100)
+    facebook = models.CharField(max_length=100, null=True)
+    whatsapp = models.CharField(max_length=100, null=True)
+    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE, null=True)
+    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return '{} {} {}'.format(self.nombre, self.apellidoPaterno, self.apellidoMaterno)
