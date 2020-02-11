@@ -6,6 +6,9 @@
 # Icon must end with two \r
 Icon
 
+static/admin
+static/admin-lte
+
 
 # Thumbnails
 ._*
@@ -37,7 +40,6 @@ build/
 develop-eggs/
 downloads/
 eggs/
-lib/
 lib64/
 parts/
 sdist/
