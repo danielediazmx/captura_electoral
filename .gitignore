@@ -88,3 +88,5 @@ db.sqlite3
 .idea
 
 dockerize/db_data
+
+docker-compose.yml

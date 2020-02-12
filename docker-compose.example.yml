@@ -4,9 +4,6 @@ services:
   mysql:
     image: mariadb/server
     command: --default-authentication-plugin=mysql_native_password
-    volumes:
-      - ./dockerize/db_data:/var/lib/mysql
-#        working_dir: /application
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASS}
       - MYSQL_DATABASE=${DB_NAME}
@@ -14,13 +11,11 @@ services:
       - MYSQL_PASSWORD=${DB_PASS}
     ports:
       - "${DB_PORT}:3306"
-    networks: 
-      - default
   web:
     build: .
     command:
       - ./dockerize/wait-for-it.sh
-      - mysql:${DB_PORT}
+      - mysql:3306
       - --
       - ./dockerize/run.sh
     volumes:
@@ -31,9 +26,3 @@ services:
       - mysql
     links:
       - mysql
-    networks: 
-      - default
-
-networks:
-  default:
-    driver: bridge

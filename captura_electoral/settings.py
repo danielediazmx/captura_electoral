@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'adminlte3',
     'adminlte3_theme',
     'apps.dashboard',
-    'apps.ubicacion',
+    'apps.ubicacion.estado',
+    'apps.ubicacion.municipio',
+    'apps.ubicacion.seccion',
+    'apps.ubicacion.localidad',
     'apps.grupo',
     'apps.organizacion',
     'apps.persona',
@@ -92,7 +95,7 @@ DATABASES = {
         'USER': ENV['DB_USER'],
         'PASSWORD': ENV['DB_PASS'],
         'HOST': ENV['DB_HOST'],
-        'PORT': ENV['DB_PORT'],
+        'PORT': 3306,
     }
 }
 
