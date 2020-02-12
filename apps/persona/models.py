@@ -17,12 +17,12 @@ class Persona(models.Model):
     direccion = models.CharField(max_length=250)
     estado = models.ForeignKey(Estado, on_delete=models.CASCADE)
     municipio = models.ForeignKey(Municipio, on_delete=models.CASCADE)
-    localidad=models.ForeignKey(Localidad, on_delete=models.CASCADE)
-    correo=models.EmailField(max_length=100)
+    localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
+    correo = models.EmailField(max_length=100)
     facebook = models.CharField(max_length=100, null=True)
     whatsapp = models.CharField(max_length=100, null=True)
-    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE, null=True)
-    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE, null=True)
+    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE)
+    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE)
 
     def __str__(self):
         return '{} {} {}'.format(self.nombre, self.apellidoPaterno, self.apellidoMaterno)
