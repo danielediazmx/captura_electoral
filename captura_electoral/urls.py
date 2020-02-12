@@ -18,5 +18,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('grupo/', include('apps.grupo.urls'))
+    path('grupo/', include('apps.grupo.urls')),
+    path('organizacion/', include('apps.organizacion.urls'))
 ]
