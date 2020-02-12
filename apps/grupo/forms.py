@@ -4,19 +4,16 @@ from apps.grupo.models import Grupo
 
 class GrupoForm(forms.ModelForm):
     class Meta:
-        model: Grupo
+        model = Grupo
 
-    fields = {
-        'clave'
-        'nombre'
-    }
+        fields = {
+            'nombre'
+        }
 
-    labels = {
-        'clave': 'Clave',
-        'nombre': 'Nombre'
-    }
+        labels = {
+            'nombre': 'Nombre'
+        }
 
-    widgets = {
-        'clave': forms.TextInput(attrs={'class': 'form-control'}),
-        'nombre': forms.TextInput(attrs={'class': 'form-control'}),
-    }
+        widgets = {
+            'nombre': forms.TextInput(attrs={'class': 'form-control'}),
+        }
