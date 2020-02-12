@@ -1,21 +1,19 @@
 from django import forms
 from apps.organizacion.models import Organizacion
 
+
 class OrganizacionForm(forms.ModelForm):
     class Meta:
-        model:Organizacion
+        model = Organizacion
 
-    fields = {
-        'clave'
-        'nombre'
-    }
+        fields = {
+            'nombre'
+        }
 
-    labels = {
-        'clave': 'Clave',
-        'nombre': 'Nombre'
-    }
+        labels = {
+            'nombre': 'Nombre'
+        }
 
-    widgets = {
-        'clave': forms.TextInput(attrs={'class': 'form-control'}),
-        'nombre': forms.TextInput(attrs={'class': 'form-control'}),
-    }
+        widgets = {
+            'nombre': forms.TextInput(attrs={'class': 'form-control'}),
+        }

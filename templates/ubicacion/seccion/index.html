@@ -13,12 +13,12 @@
                         <th>Nombre</th>
                         </thead>
                         <tbody>
-                        {% for localidad in filter.qs %}
+                        {% for seccion in filter.qs %}
                             <tr>
-                                <td>{{ localidad.clave }}</td>
-                                <td>{{ localidad.nombre }}</td>
+                                <td>{{ seccion.clave }}</td>
+                                <td>{{ seccion.nombre }}</td>
                                 <td>
-                                    <a href="{% url 'localidad_editar' localidad.id %}"
+                                    <a href="{% url 'seccion_editar' seccion.id %}"
                                        class="btn btn-success btn-sm btn-raised" title="Editar"
                                        data-toggle="tooltip">
                                         <i class="glyphicon glyphicon-edit"></i>

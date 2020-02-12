@@ -12,7 +12,7 @@ from captura_electoral.filters import filtroOrganizacion
 
 class OrganizacionIndex(FilterView):
     model = Organizacion
-    template_name = 'oficina/index.html'
+    template_name = 'organizacion/index.html'
     paginate_by = 15
     filterset_class = filtroOrganizacion
 
@@ -20,15 +20,15 @@ class OrganizacionIndex(FilterView):
 class OrganizacionCreate(CreateView):
     model = Organizacion
     form_class = OrganizacionForm
-    template_name = 'oficina/form.html'
-    success_url = reverse_lazy('oficina_index')
+    template_name = 'organizacion/form.html'
+    success_url = reverse_lazy('organizacion_index')
 
 
 class OrganizacionUpdate(UpdateView):
     model = Organizacion
     form_class = OrganizacionForm
-    template_name = 'oficina/form.html'
-    success_url = reverse_lazy('oficina_index')
+    template_name = 'organizacion/form.html'
+    success_url = reverse_lazy('organizacion_index')
 
 
 def destroyOrganizacion(request, id):

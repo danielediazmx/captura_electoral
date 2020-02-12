@@ -10,6 +10,7 @@ from django_filters.views import FilterView
 from apps.usuario.forms import UserForm
 from captura_electoral.filters import filtroUsuario
 
+
 class UserIndex(FilterView):
     model = User
     template_name = 'usuario/index.html'

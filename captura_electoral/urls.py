@@ -21,7 +21,8 @@ from captura_electoral import settings
 
 urlpatterns = [
     path('grupo/', include('apps.grupo.urls')),
-    path('organizacion/', include('apps.organizacion.urls'))
+    path('organizacion/', include('apps.organizacion.urls')),
+    path('usuario/', include('apps.usuario.urls'))
 ]
 static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
