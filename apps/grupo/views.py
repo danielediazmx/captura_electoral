@@ -28,7 +28,7 @@ class GrupoCreate(CreateView):
 class GrupoUpdate(UpdateView):
     model = Grupo
     form_class = GrupoForm
-    template_name = 'oficina/form.html'
+    template_name = 'grupo/form.html'
     success_url = reverse_lazy('grupo_index')
 
 
