@@ -3,36 +3,36 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
-from apps.grupo.models import Grupo
-from apps.grupo.forms import GrupoForm
+from apps.ubicacion.municipio.models import Municipio
+from apps.ubicacion.municipio.forms import MunicipioForm
 from django_filters.views import FilterView
-from captura_electoral.filters import filtroGrupo
+from captura_electoral.filters import filtroMunicipio
 
 
 # Create your views here.
 
-class GrupoIndex(FilterView):
-    model = Grupo
+class MunicipioIndex(FilterView):
+    model = Municipio
     template_name = 'oficina/index.html'
     paginate_by = 15
-    filterset_class = filtroGrupo
+    filterset_class = filtroMunicipio
 
 
-class GrupoCreate(CreateView):
-    model = Grupo
-    form_class = GrupoForm
+class MunicipioCreate(CreateView):
+    model = Municipio
+    form_class = MunicipioForm
     template_name = 'oficina/form.html'
     success_url = reverse_lazy('oficina_index')
 
 
-class GrupoUpdate(UpdateView):
-    model = Grupo
-    form_class = GrupoForm
+class MunicipioUpdate(UpdateView):
+    model = Municipio
+    form_class = MunicipioForm
     template_name = 'oficina/form.html'
     success_url = reverse_lazy('oficina_index')
 
 
-def destroyGrupo(request, id):
-    localidad = Grupo.objects.filter(pk=id).first()
+def destroyMunicipio(request, id):
+    localidad = Municipio.objects.filter(pk=id).first()
     localidad.delete()
     return JsonResponse({'type': 'success'})

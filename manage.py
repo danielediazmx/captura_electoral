@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
+import env_file
 import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'captura_electoral.settings')
+    ENV = env_file.get()
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', ENV['SYSTEM_SETTINGS'])
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -18,4 +20,5 @@ def main():
 
 
 if __name__ == '__main__':
+    env_file.load()
     main()
