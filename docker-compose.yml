@@ -13,20 +13,20 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASS}
     ports:
-      - "${DB_PORT}:3306"
+      - "${DB_PORT}:${DB_PORT}"
     networks: 
       - default
   web:
     build: .
     command:
       - ./dockerize/wait-for-it.sh
-      - mysql:3306
+      - mysql:${DB_PORT}
       - --
       - ./dockerize/run.sh
     volumes:
       - .:/usr/src/app
     ports:
-      - "${WEB_PORT}:8000"
+      - "${WEB_PORT}:${WEB_PORT}"
     depends_on:
       - mysql
     links:
