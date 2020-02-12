@@ -20,5 +20,8 @@ from django.urls import path
 from captura_electoral import settings
 
 urlpatterns = [
-    path('grupo/', include('apps.grupo.urls'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('grupo/', include('apps.grupo.urls')),
+    path('organizacion/', include('apps.organizacion.urls'))
+]
+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
