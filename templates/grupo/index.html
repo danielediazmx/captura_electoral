@@ -4,21 +4,21 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3>Estados</h3>
+                    <h3>Grupos</h3>
                 </div>
                 <div class="card-body table-responsive p-0">
                     <table class="table table-hover">
                         <thead>
-                        <th>Clave</th>
+                        <th>ID</th>
                         <th>Nombre</th>
                         </thead>
                         <tbody>
-                        {% for estado in filter.qs %}
+                        {% for grupo in filter.qs %}
                             <tr>
-                                <td>{{ estado.clave }}</td>
-                                <td>{{ estado.nombre }}</td>
+                                <td>{{ grupo.pk }}</td>
+                                <td>{{ grupo.nombre }}</td>
                                 <td>
-                                    <a href="{% url 'estado_editar' estado.id %}"
+                                    <a href="{% url 'grupo_editar' grupo.id %}"
                                        class="btn btn-success btn-sm btn-raised" title="Editar"
                                        data-toggle="tooltip">
                                         <i class="glyphicon glyphicon-edit"></i>
