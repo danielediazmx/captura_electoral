@@ -12,7 +12,7 @@ class Persona(models.Model):
     nombre = models.CharField(max_length=150)
     apellidoPaterno = models.CharField(max_length=150)
     apellidoMaterno = models.CharField(max_length=150)
-    fechaNacimiento = models.DateField()
+    fechaNacimiento = models.DateField(null=False)
     curp = models.CharField(max_length=150)
     direccion = models.CharField(max_length=250)
     estado = models.ForeignKey(Estado, on_delete=models.CASCADE)

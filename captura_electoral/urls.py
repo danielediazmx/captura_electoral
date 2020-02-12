@@ -18,8 +18,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from captura_electoral import settings
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='/persona', permanent=False), name='index'),
     path('grupo/', include('apps.grupo.urls')),
     path('organizacion/', include('apps.organizacion.urls')),
     path('usuario/', include('apps.usuario.urls')),

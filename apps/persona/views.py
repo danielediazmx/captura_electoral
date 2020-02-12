@@ -10,7 +10,7 @@ from captura_electoral.filters import filtroPersona
 
 class PersonaIndex(FilterView):
     model = Persona
-    template_name = 'oficina/index.html'
+    template_name = 'persona/index.html'
     paginate_by = 15
     filterset_class = filtroPersona
 
@@ -18,15 +18,15 @@ class PersonaIndex(FilterView):
 class PersonaCreate(CreateView):
     model = Persona
     form_class = PersonaForm
-    template_name = 'oficina/form.html'
-    success_url = reverse_lazy('oficina_index')
+    template_name = 'persona/form.html'
+    success_url = reverse_lazy('persona_index')
 
 
 class PersonaUpdate(UpdateView):
     model = Persona
     form_class = PersonaForm
-    template_name = 'oficina/form.html'
-    success_url = reverse_lazy('oficina_index')
+    template_name = 'persona/form.html'
+    success_url = reverse_lazy('persona_index')
 
 
 def destroyPersona(request, id):
