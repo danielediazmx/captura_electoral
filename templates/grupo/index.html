@@ -4,7 +4,11 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
+<<<<<<< HEAD
                     <h3>Localidades</h3>
+=======
+                    <h3>Estados</h3>
+>>>>>>> a7ccfdc9735c24bf9fc34e366e723ac1b7f98c8d
                 </div>
                 <div class="card-body table-responsive p-0">
                     <table class="table table-hover">
@@ -13,12 +17,21 @@
                         <th>Nombre</th>
                         </thead>
                         <tbody>
+<<<<<<< HEAD
                         {% for localidad in filter.qs %}
                             <tr>
                                 <td>{{ localidad.clave }}</td>
                                 <td>{{ localidad.nombre }}</td>
                                 <td>
                                     <a href="{% url 'localidad_editar' localidad.id %}"
+=======
+                        {% for estado in filter.qs %}
+                            <tr>
+                                <td>{{ estado.clave }}</td>
+                                <td>{{ estado.nombre }}</td>
+                                <td>
+                                    <a href="{% url 'estado_editar' estado.id %}"
+>>>>>>> a7ccfdc9735c24bf9fc34e366e723ac1b7f98c8d
                                        class="btn btn-success btn-sm btn-raised" title="Editar"
                                        data-toggle="tooltip">
                                         <i class="glyphicon glyphicon-edit"></i>

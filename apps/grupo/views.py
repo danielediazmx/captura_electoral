@@ -13,7 +13,7 @@ from captura_electoral.filters import filtroGrupo
 
 class GrupoIndex(FilterView):
     model = Grupo
-    template_name = 'oficina/index.html'
+    template_name = 'grupo/index.html'
     paginate_by = 15
     filterset_class = filtroGrupo
 
