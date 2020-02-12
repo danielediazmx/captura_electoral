@@ -8,12 +8,12 @@ services:
       - ./dockerize/db_data:/var/lib/mysql
 #        working_dir: /application
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=captura_electoral
-      - MYSQL_USER=captura_electoral
-      - MYSQL_PASSWORD=captura_electoral
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASS}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASS}
     ports:
-      - "3306:3306"
+      - "${DB_PORT}:3306"
     networks: 
       - default
   web:
@@ -26,7 +26,7 @@ services:
     volumes:
       - .:/usr/src/app
     ports:
-      - "8000:8000"
+      - "${WEB_PORT}:8000"
     depends_on:
       - mysql
     links:
