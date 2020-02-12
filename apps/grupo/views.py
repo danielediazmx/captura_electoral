@@ -21,15 +21,15 @@ class GrupoIndex(FilterView):
 class GrupoCreate(CreateView):
     model = Grupo
     form_class = GrupoForm
-    template_name = 'oficina/form.html'
-    success_url = reverse_lazy('oficina_index')
+    template_name = 'grupo/form.html'
+    success_url = reverse_lazy('grupo_index')
 
 
 class GrupoUpdate(UpdateView):
     model = Grupo
     form_class = GrupoForm
     template_name = 'oficina/form.html'
-    success_url = reverse_lazy('oficina_index')
+    success_url = reverse_lazy('grupo_index')
 
 
 def destroyGrupo(request, id):
