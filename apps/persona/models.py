@@ -21,8 +21,8 @@ class Persona(models.Model):
     correo=models.EmailField(max_length=100)
     facebook = models.CharField(max_length=100, null=True)
     whatsapp = models.CharField(max_length=100, null=True)
-    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE, null=True)
-    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE, null=True)
+    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE)
+    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE)
 
     def __str__(self):
         return '{} {} {}'.format(self.nombre, self.apellidoPaterno, self.apellidoMaterno)
