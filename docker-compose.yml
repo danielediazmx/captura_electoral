@@ -13,7 +13,7 @@ services:
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASS}
     ports:
-      - "${DB_PORT}:${DB_PORT}"
+      - "${DB_PORT}:3306"
     networks: 
       - default
   web:
