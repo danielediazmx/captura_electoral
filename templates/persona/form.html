@@ -36,20 +36,21 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="form-group">
                                 <label>{{ form.fechaNacimiento.label_tag }}</label>
                                 {{ form.fechaNacimiento }}
                                 {{ form.fechaNacimiento.errors }}
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="form-group">
                                 <label>{{ form.curp.label_tag }}</label>
                                 {{ form.curp }}
                                 {{ form.curp.errors }}
                             </div>
                         </div>
+                        <div class="clearfix"></div>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>{{ form.direccion.label_tag }}</label>
@@ -57,14 +58,7 @@
                                 {{ form.direccion.errors }}
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label>{{ form.estado.label_tag }}</label>
-                                {{ form.estado }}
-                                {{ form.estado.errors }}
-                            </div>
-                        </div>
+                        <input type="hidden" name="estado" value="26"/>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>{{ form.municipio.label_tag }}</label>
@@ -72,13 +66,14 @@
                                 {{ form.municipio.errors }}
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <input type="hidden" name="localidad" value="1"/>
+                        <!--<div class="col-sm-4">
                             <div class="form-group">
                                 <label>{{ form.localidad.label_tag }}</label>
                                 {{ form.localidad }}
                                 {{ form.localidad.errors }}
                             </div>
-                        </div>
+                        </div>-->
                         <div class="clearfix"></div>
                         <div class="col-sm-4">
                             <div class="form-group">
