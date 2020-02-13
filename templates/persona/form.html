@@ -127,8 +127,8 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="nivel_confianza" style="margin-bottom: 20px;">Nivel de Confianza: <span
-                                        id="nivel_confianza_text">3</span></label>
-                                <input type="range" name="nivel_confianza" min="0" max="5" class="custom-range custom-range-teal"
+                                        id="nivel_confianza_text">{{ form.instance.nivel_confianza }}</span></label>
+                                <input type="range" name="nivel_confianza" min="0" value="{{ form.instance.nivel_confianza }}" max="5" class="custom-range custom-range-teal"
                                     id="nivel_confianza">
                             </div>
                         </div>
