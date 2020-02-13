@@ -23,6 +23,7 @@ class Persona(models.Model):
     whatsapp = models.CharField(max_length=100, null=True)
     sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
     organismo = models.ForeignKey(Organismo, on_delete=models.CASCADE)
+    nivel_confianza = models.IntegerField(default=0)
 
     def __str__(self):
         return '{} {} {}'.format(self.nombre, self.apellidoPaterno, self.apellidoMaterno)

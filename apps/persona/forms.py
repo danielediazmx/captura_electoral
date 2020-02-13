@@ -27,7 +27,8 @@ class PersonaForm(forms.ModelForm):
             'facebook',
             'whatsapp',
             'sector',
-            'organismo'
+            'organismo',
+            'nivel_confianza'
         ]
 
         labels = {
@@ -44,7 +45,8 @@ class PersonaForm(forms.ModelForm):
             'facebook': 'Facebook',
             'whatsapp': 'Whatsapp',
             'sector': 'Sector',
-            'organismo': 'Organismo'
+            'organismo': 'Organismo',
+            'nivel_confianza':'Nivel de Confianza'
         }
 
         widgets = {
