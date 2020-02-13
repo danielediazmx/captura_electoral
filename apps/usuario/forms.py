@@ -19,7 +19,7 @@ class UserForm(ModelForm):
             'first_name': 'Nombre',
             'last_name': 'Apellidos',
             'email': 'Correo',
-            'password': 'Contraseña'
+            'password': 'Contraseña',
         }
 
         widgets = {
