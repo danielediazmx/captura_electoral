@@ -20,7 +20,7 @@ class Persona(models.Model):
     estado = models.ForeignKey(Estado, on_delete=models.CASCADE)
     municipio = models.ForeignKey(Municipio, on_delete=models.CASCADE)
     localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
-    seccion = models.ForeignKey(Seccion, on_delete=models.CASCADE, blank=True, null=True)
+    # seccion = models.ForeignKey(Seccion, on_delete=models.CASCADE, blank=True, null=True)
     correo = models.EmailField(max_length=100)
     facebook = models.CharField(max_length=100, null=True)
     whatsapp = models.CharField(max_length=100, null=True)
