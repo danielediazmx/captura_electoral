@@ -1,16 +1,17 @@
 from django import forms
 from apps.persona.models import Persona
-from apps.organizacion.models import Organizacion
-from apps.grupo.models import Grupo
+from apps.organismo.models import Organismo
+from apps.sector.models import Sector
 from apps.ubicacion.estado.models import Estado
 
 
 class PersonaForm(forms.ModelForm):
+    estado = forms.ModelChoiceField(queryset=Estado.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))
+    sector = forms.ModelChoiceField(queryset=Sector.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
+    organismo = forms.ModelChoiceField(queryset=Organismo.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
+    
     class Meta:
         model = Persona
-        estado = forms.ModelChoiceField(queryset=Estado.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
-        grupo = forms.ModelChoiceField(queryset=Grupo.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
-        organizacion = forms.ModelChoiceField(queryset=Organizacion.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
 
         fields = [
             'nombre',
@@ -25,8 +26,8 @@ class PersonaForm(forms.ModelForm):
             'correo',
             'facebook',
             'whatsapp',
-            'grupo',
-            'organizacion'
+            'sector',
+            'organismo'
         ]
 
         labels = {
@@ -42,20 +43,20 @@ class PersonaForm(forms.ModelForm):
             'correo': 'Correo',
             'facebook': 'Facebook',
             'whatsapp': 'Whatsapp',
-            'grupo': 'Grupo',
-            'organizacion': 'Organizacion'
+            'sector': 'Sector',
+            'organismo': 'Organismo'
         }
 
         widgets = {
             'nombre': forms.TextInput(attrs={'class': 'form-control'}),
             'apellidoPaterno': forms.TextInput(attrs={'class': 'form-control'}),
             'apellidoMaterno': forms.TextInput(attrs={'class': 'form-control'}),
-            'fechaNacimiento': forms.DateInput(attrs={'class': 'form-control'}),
+            'fechaNacimiento': forms.TextInput(attrs={'class': 'form-control'}),
             'curp': forms.TextInput(attrs={'class': 'form-control'}),
             'direccion': forms.TextInput(attrs={'class': 'form-control'}),
             'municipio': forms.Select(attrs={'class': 'form-control'}),
             'localidad': forms.Select(attrs={'class': 'form-control'}),
             'correo': forms.TextInput(attrs={'class': 'form-control', 'type': 'email'}),
             'facebook': forms.TextInput(attrs={'class': 'form-control'}),
-            'whattsapp': forms.TextInput(attrs={'class': 'form-control'})
+            'whatsapp': forms.TextInput(attrs={'class': 'form-control'})
         }

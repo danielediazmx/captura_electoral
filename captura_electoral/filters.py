@@ -6,8 +6,8 @@ from apps.ubicacion.estado.models import Estado
 from apps.ubicacion.municipio.models import Municipio
 from apps.ubicacion.localidad.models import Localidad
 from apps.ubicacion.seccion.models import Seccion
-from apps.grupo.models import Grupo
-from apps.organizacion.models import Organizacion
+from apps.sector.models import Sector
+from apps.organismo.models import Organismo
 
 
 class filtroUsuario(FilterSet):
@@ -36,30 +36,28 @@ class filtroPersona(FilterSet):
                                   widget=forms.Select(attrs={'class': 'form-control'}))
     seccion = ModelChoiceFilter(queryset=Seccion.objects.all(),
                                 widget=forms.Select(attrs={'class': 'form-control'}))
-    grupo = ModelChoiceFilter(queryset=Grupo.objects.all(),
+    sector = ModelChoiceFilter(queryset=Sector.objects.all(),
                               widget=forms.Select(attrs={'class': 'form-control'}))
-    organizacion = ModelChoiceFilter(queryset=Organizacion.objects.all(),
+    organismo = ModelChoiceFilter(queryset=Organismo.objects.all(),
                                      widget=forms.Select(attrs={'class': 'form-control'}))
 
 
-class filtroGrupo(FilterSet):
-    clave = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
+class filtroSector(FilterSet):
     nombre = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
 
     class Meta:
-        model = Grupo
-        labels = {'clave': 'Clave', 'nombre': 'Nombre'}
-        fields = {'clave', 'nombre'}
+        model = Sector
+        labels = {'nombre': 'Nombre'}
+        fields = {'nombre'}
 
 
-class filtroOrganizacion(FilterSet):
-    clave = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
+class filtroOrganismo(FilterSet):
     nombre = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
 
     class Meta:
-        model = Organizacion
-        labels = {'clave': 'Clave', 'nombre': 'Nombre'}
-        fields = {'clave', 'nombre'}
+        model = Organismo
+        labels = {'nombre': 'Nombre'}
+        fields = {'nombre'}
 
 
 class filtroEstado(FilterSet):

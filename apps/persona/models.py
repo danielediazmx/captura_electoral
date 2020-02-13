@@ -1,8 +1,8 @@
 from django.db import models
 from apps.ubicacion.estado.models import Estado
 from apps.ubicacion.municipio.models import Municipio
-from apps.grupo.models import Grupo
-from apps.organizacion.models import Organizacion
+from apps.sector.models import Sector
+from apps.organismo.models import Organismo
 from apps.ubicacion.localidad.models import Localidad
 
 
@@ -21,8 +21,8 @@ class Persona(models.Model):
     correo = models.EmailField(max_length=100)
     facebook = models.CharField(max_length=100, null=True)
     whatsapp = models.CharField(max_length=100, null=True)
-    grupo = models.ForeignKey(Grupo, on_delete=models.CASCADE)
-    organizacion = models.ForeignKey(Organizacion, on_delete=models.CASCADE)
+    sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
+    organismo = models.ForeignKey(Organismo, on_delete=models.CASCADE)
 
     def __str__(self):
         return '{} {} {}'.format(self.nombre, self.apellidoPaterno, self.apellidoMaterno)

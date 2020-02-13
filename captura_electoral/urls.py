@@ -22,8 +22,8 @@ from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('', RedirectView.as_view(url='/persona', permanent=False), name='index'),
-    path('grupo/', include('apps.grupo.urls')),
-    path('organizacion/', include('apps.organizacion.urls')),
+    path('sector/', include('apps.sector.urls')),
+    path('organismo/', include('apps.organismo.urls')),
     path('usuario/', include('apps.usuario.urls')),
     path('persona/', include('apps.persona.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

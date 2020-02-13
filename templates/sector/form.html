@@ -5,9 +5,9 @@
             <div class="card">
                 <div class="card-header">
                     {% if form.instance.pk %}
-                    <h3>Editar Grupo</h3>
+                    <h3>Editar Sector</h3>
                     {% else %}
-                    <h3>Nuevo Grupo</h3>
+                    <h3>Nuevo Sector</h3>
                     {% endif %}
                 </div>
                 <form role="form" method="post">
@@ -19,7 +19,7 @@
 
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Guardar</button>
-                        <a href="{% url 'grupo_index' %}" class="btn btn-default">Cancelar</a>
+                        <a href="{% url 'sector_index' %}" class="btn btn-default">Cancelar</a>
                     </div>
                 </form>
             </div>

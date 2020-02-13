@@ -1,28 +1,142 @@
 {% extends 'index.html' %}
 {% block content %}
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    {% if form.instance.pk %}
-                    <h3>Editar Persona</h3>
-                    {% else %}
-                    <h3>Nueva Persona</h3>
-                    {% endif %}
-                </div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                {% if form.instance.pk %}
+                <h3>Editar Usuario</h3>
+                {% else %}
+                <h3>Nuevo Usuario</h3>
+                {% endif %}
+            </div>
+            {% csrf_token %}
+            <div class="card-body">
                 <form role="form" method="post">
-                    {% csrf_token %}
-                    <div class="card-body">
-                        {{ form.as_p }}
-                    </div>
-                    <!-- /.card-body -->
-
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                        <a href="{% url 'grupo_index' %}" class="btn btn-default">Cancelar</a>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.nombre.label_tag }}</label>
+                                {{ form.nombre }}
+                                {{ form.nombre.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.apellidoPaterno.label_tag }}</label>
+                                {{ form.apellidoPaterno }}
+                                {{ form.apellidoPaterno.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.apellidoMaterno.label_tag }}</label>
+                                {{ form.apellidoMaterno }}
+                                {{ form.apellidoMaterno.errors }}
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.fechaNacimiento.label_tag }}</label>
+                                {{ form.fechaNacimiento }}
+                                {{ form.fechaNacimiento.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.curp.label_tag }}</label>
+                                {{ form.curp }}
+                                {{ form.curp.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.direccion.label_tag }}</label>
+                                {{ form.direccion }}
+                                {{ form.direccion.errors }}
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.estado.label_tag }}</label>
+                                {{ form.estado }}
+                                {{ form.estado.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.municipio.label_tag }}</label>
+                                {{ form.municipio }}
+                                {{ form.municipio.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.localidad.label_tag }}</label>
+                                {{ form.localidad }}
+                                {{ form.localidad.errors }}
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.correo.label_tag }}</label>
+                                {{ form.correo }}
+                                {{ form.correo.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.facebook.label_tag }}</label>
+                                {{ form.facebook }}
+                                {{ form.facebook.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.whatsapp.label_tag }}</label>
+                                {{ form.whatsapp }}
+                                {{ form.whatsapp.errors }}
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>{{ form.sector.label_tag }}</label>
+                                {{ form.sector }}
+                                {{ form.sector.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>{{ form.organismo.label_tag }}</label>
+                                {{ form.organismo }}
+                                {{ form.organismo.errors }}
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a href="{% url 'persona_index' %}" class="btn btn-default">Cancelar</a>
+            </div>
         </div>
     </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
+<script>
+    $(function () {
+        $('#id_fechaNacimiento').datepicker();
+    })
+</script>
 {% endblock %}
