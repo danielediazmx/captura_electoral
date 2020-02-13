@@ -1,11 +1,12 @@
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
 from apps.persona.models import Persona
 from apps.persona.forms import PersonaForm
 from django_filters.views import FilterView
 from captura_electoral.filters import filtroPersona
+from django.contrib import messages
 
 
 class PersonaIndex(FilterView):
@@ -20,6 +21,20 @@ class PersonaCreate(CreateView):
     form_class = PersonaForm
     template_name = 'persona/form.html'
     success_url = reverse_lazy('persona_index')
+
+
+    def post(self, request, *args, **kwargs):
+        self.object = self.get_object
+        userform = self.form_class(request.POST)
+        if userform.is_valid():
+            user = userform.save(commit=False)
+            messages.add_message(request, messages.SUCCESS, 'Se ha guardado el usuario con éxito')
+            user.save()
+            return redirect(self.get_success_url())
+        else:
+            print(userform.errors)
+            return render(request, 'usuario/form.html', {'form': userform})
+
 
 
 class PersonaUpdate(UpdateView):

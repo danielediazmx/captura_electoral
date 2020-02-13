@@ -14,14 +14,14 @@
                 <div class="card-body table-responsive p-0">
                     <table class="table table-hover">
                         <thead>
-                        <th>ID</th>
+                        <th>Usuario</th>
                         <th>Nombre</th>
                         </thead>
                         <tbody>
                         {% for usuario in filter.qs %}
                             <tr id="tr_{{ usuario.pk }}">
-                                <td>{{ usuario.pk }}</td>
-                                <td>{{ usuario.nombre }}</td>
+                                <td>{{ usuario.username }}</td>
+                                <td>{{ usuario.first_name }} {{ usuario.last_name }}</td>
                                 <td style="width: 20%;">
                                     <a href="{% url 'usuario_editar' usuario.id %}"
                                        class="btn btn-success btn-sm btn-raised" title="Editar"
