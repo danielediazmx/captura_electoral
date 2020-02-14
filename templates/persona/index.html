@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 {% block content %}
     {% load static %}
-    <script src="/media/main/basicForm.js"></script>
+    <script type="text/plain" src="/media/main/basicForm.js"></script>>
     <div class="row">
         <div class="col-12">
             <div class="card">
@@ -9,7 +9,7 @@
                     <a href="{% url 'persona_create' %}" class="btn btn-primary btn-sm" style="float: right">
                         <i class="fa fa-plus"></i> Nuevo
                     </a>
-                    <h3>Usuarios</h3>
+                    <h3>Registros</h3>
                 </div>
                 <ul>
                     {% for message in messages %}

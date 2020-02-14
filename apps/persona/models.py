@@ -10,13 +10,18 @@ from apps.ubicacion.seccion.models import Seccion
 # Create your models here
 
 class Persona(models.Model):
+    sexo = ((1, 'Masculino'), (2, 'Femenino'))
     nombre = models.CharField(max_length=100)
     apellidoPaterno = models.CharField(max_length=100)
     apellidoMaterno = models.CharField(max_length=100)
+    sexo = models.IntegerField(choices=sexo, default=1)
     fechaNacimiento = models.DateField(null=False)
     curp = models.CharField(max_length=150)
     clave_electoral = models.CharField(max_length=30, default=00000000)
-    direccion = models.CharField(max_length=250)
+    direccion = models.CharField(max_length=250, blank=True, null=True)
+    calle_numero = models.CharField(max_length=100, null=True)
+    colonia = models.CharField(max_length=100, null=True)
+    codigo_postal = models.CharField(max_length=10, null=True)
     estado = models.ForeignKey(Estado, on_delete=models.CASCADE)
     municipio = models.ForeignKey(Municipio, on_delete=models.CASCADE)
     localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
