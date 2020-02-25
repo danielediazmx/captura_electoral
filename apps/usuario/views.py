@@ -33,7 +33,6 @@ class UserCreate(CreateView):
 
 
 
-
 class UserUpdate(UpdateView):
     model = User
     form_class = UserForm

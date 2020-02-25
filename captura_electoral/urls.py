@@ -22,9 +22,8 @@ from django.views.generic.base import RedirectView
 from django.contrib.auth.views import LoginView, logout_then_login
 
 urlpatterns = [
-    path('', LoginView.as_view(template_name='dashboard/index.html'), name='dashboard'),
+    path('', LoginView.as_view(template_name='login/login.html'), name='login'),
     path('logout', logout_then_login, name='logout'),
-    path('', RedirectView.as_view(url='/persona', permanent=False), name='index'),
     path('sector/', include('apps.sector.urls')),
     path('organismo/', include('apps.organismo.urls')),
     path('usuario/', include('apps.usuario.urls')),
