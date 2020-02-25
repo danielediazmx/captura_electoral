@@ -1,0 +1,11 @@
+[
+{
+    "model": "localidad.localidad",
+    "pk": 1,
+    "fields": {
+        "clave": "",
+        "nombre": "Default",
+        "municipio": 17
+    }
+}
+]

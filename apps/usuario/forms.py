@@ -19,7 +19,6 @@ class UserForm(ModelForm):
             'first_name': 'Nombre',
             'last_name': 'Apellidos',
             'email': 'Correo',
-            'password': 'Contraseña',
         }
 
         widgets = {
@@ -27,5 +26,12 @@ class UserForm(ModelForm):
             'first_name': forms.TextInput(attrs={'class': 'form-control', 'required': 'required'}),
             'last_name': forms.TextInput(attrs={'class': 'form-control', 'required': 'required'}),
             'email': forms.TextInput(attrs={'class': 'form-control', 'required': 'required'}),
-            'password': forms.PasswordInput(attrs={'class': 'form-control', 'required': 'required'}),
         }
+
+    def save(self, commit=True):
+        user = super(UserForm, self).save(commit=False)
+        user.set_password(self.cleaned_data["password"])
+        if commit:
+            user.save()
+        return user
+

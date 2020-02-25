@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
-            <form role="form" method="post">
+            <form role="form" name="myForm" method="post" onsubmit="return validateForm()">
                 <div class="card-header">
                     {% if form.instance.pk %}
                     <h3>Editar Registro</h3>
@@ -20,13 +20,6 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="form-group">
-                                <label>{{ form.nombre.label_tag }}</label>
-                                {{ form.nombre }}
-                                {{ form.nombre.errors }}
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
                                 <label>{{ form.apellidoPaterno.label_tag }}</label>
                                 {{ form.apellidoPaterno }}
                                 {{ form.apellidoPaterno.errors }}
@@ -39,6 +32,13 @@
                                 {{ form.apellidoMaterno.errors }}
                             </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label>{{ form.nombre.label_tag }}</label>
+                                {{ form.nombre }}
+                                {{ form.nombre.errors }}
+                            </div>
+                        </div>
                            <div class="col-sm-3">
                             <div class="form-group">
                                 <label>{{ form.sexo.label_tag }}</label>
@@ -48,17 +48,21 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>{{ form.fechaNacimiento.label_tag }}</label>
-                                {{ form.fechaNacimiento }}
+                            <div class="form-row align-items-center">
+                                <label style="width: 100%;">{{ form.fechaNacimiento.label_tag }}</label>
+                                <div class="clearfix"></div>
+                                <br>
+                                <input type="hidden" name="fechaNacimiento" id="fechaNacimiento" value="{{ form.instance.fechaNacimiento }}">
+                                <div class="col-auto">
+                                    <input type="number" class="form-control mb-4" id="d" name="date" min="1" max="31" />
+                                </div>
+                                <div class="col-auto">
+                                    <input type="number" class="form-control mb-4" id="m" name="month" min="1" max="12" />
+                                </div>
+                                <div class="col-auto">
+                                    <input type="number" class="form-control mb-4" id="y"  name="year" min="1900" max="9999" />
+                                </div>
                                 {{ form.fechaNacimiento.errors }}
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>{{ form.curp.label_tag }}</label>
-                                {{ form.curp }}
-                                {{ form.curp.errors }}
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -195,5 +199,40 @@
             $("#nivel_confianza_text").html($(this).val());
         });
     });
+
+    function validateForm() {
+        var d = document.forms["myForm"]["date"].value;
+        var m = document.forms["myForm"]["month"].value;
+        var y = document.forms["myForm"]["year"].value;
+
+        if(d == null || d == ""){
+            alert("El día de nacimiento es inválido.");
+            return false;
+        }
+        if(m == null || m == ""){
+            alert("El mes de nacimiento es inválido.");
+            return false;
+        }
+        if(y == null || y == ""){
+            alert("El año de nacimiento es inválido.");
+            return false;
+        }
+        if((m == 4 || m == 6 || m == 9 || m == 11) && d == 31) {
+            alert("El mes seleccionado solo tiene 30 días");
+            return false;
+        }
+        if(m == 2 && d > 29 && (y%4 == 0)) {
+            alert("El mes seleccionado solo tiene 29 días");
+            return false;
+        }
+
+        if((m == 2) && d > 28) {
+            alert("El mes seleccionado solo tiene 28 días");
+            return false;
+        }
+
+        $("#fechaNacimiento").val(`${y}-${m}-${d}`);
+        return true;
+    }
 </script>
 {% endblock %}

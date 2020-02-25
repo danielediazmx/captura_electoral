@@ -4,7 +4,11 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3>Usuario</h3>
+                    {% if userform.instance.id %}
+                        <h3>Editar Usuario</h3>
+                    {% else %}
+                        <h3>Nuevo Usuario</h3>
+                    {% endif %}
                 </div>
                 <form role="form" method="post">
                     {% csrf_token %}
@@ -30,18 +34,14 @@
                             {{ userform.email }}
                         </div>
                         <div class="form-group">
-                            {{ userform.password.errors }}
-                            <label>{{ userform.password.label }}</label>
-                            {{ userform.password }}
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control" name="password">
                         </div>
-{#                        <div class="form-group">#}
-{#                            <label for="password2">Confirmar Contraseña:</label>#}
-{#                            <input type="password" name="password2" autocomplete="new-password" required id="id_password2" class="form-control">#}
-{#                        </div>#}
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Guardar</button>
+                        <a href="{% url 'usuario_index' %}" class="btn btn-default">Cancelar</a>
                     </div>
                 </form>
             </div>

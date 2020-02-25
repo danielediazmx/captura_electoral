@@ -1,0 +1,677 @@
+[
+{
+    "model": "municipio.municipio",
+    "pk": 1,
+    "fields": {
+        "clave": "",
+        "nombre": "ACONCHI",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 2,
+    "fields": {
+        "clave": "",
+        "nombre": "AGUA PRIETA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 3,
+    "fields": {
+        "clave": "",
+        "nombre": "ALAMOS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 4,
+    "fields": {
+        "clave": "",
+        "nombre": "ALTAR",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 5,
+    "fields": {
+        "clave": "",
+        "nombre": "ARIVECHI",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 6,
+    "fields": {
+        "clave": "",
+        "nombre": "ARIZPE",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 7,
+    "fields": {
+        "clave": "",
+        "nombre": "ATIL",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 8,
+    "fields": {
+        "clave": "",
+        "nombre": "BACADEHUACHI",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 9,
+    "fields": {
+        "clave": "",
+        "nombre": "BACANORA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 10,
+    "fields": {
+        "clave": "",
+        "nombre": "BACERAC",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 11,
+    "fields": {
+        "clave": "",
+        "nombre": "BACOACHI",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 12,
+    "fields": {
+        "clave": "",
+        "nombre": "BACUM",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 13,
+    "fields": {
+        "clave": "",
+        "nombre": "BANAMICHI",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 14,
+    "fields": {
+        "clave": "",
+        "nombre": "BAVIACORA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 15,
+    "fields": {
+        "clave": "",
+        "nombre": "BAVISPE",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 16,
+    "fields": {
+        "clave": "",
+        "nombre": "BENJAMIN HILL",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 17,
+    "fields": {
+        "clave": "",
+        "nombre": "CABORCA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 18,
+    "fields": {
+        "clave": "",
+        "nombre": "CAJEME",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 19,
+    "fields": {
+        "clave": "",
+        "nombre": "CANANEA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 20,
+    "fields": {
+        "clave": "",
+        "nombre": "CARBO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 21,
+    "fields": {
+        "clave": "",
+        "nombre": "COLORADA, LA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 22,
+    "fields": {
+        "clave": "",
+        "nombre": "CUCURPE",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 23,
+    "fields": {
+        "clave": "",
+        "nombre": "CUMPAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 24,
+    "fields": {
+        "clave": "",
+        "nombre": "DIVISADEROS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 25,
+    "fields": {
+        "clave": "",
+        "nombre": "EMPALME",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 26,
+    "fields": {
+        "clave": "",
+        "nombre": "ETCHOJOA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 27,
+    "fields": {
+        "clave": "",
+        "nombre": "FRONTERAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 28,
+    "fields": {
+        "clave": "",
+        "nombre": "GRANADOS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 29,
+    "fields": {
+        "clave": "",
+        "nombre": "GUAYMAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 30,
+    "fields": {
+        "clave": "",
+        "nombre": "HERMOSILLO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 31,
+    "fields": {
+        "clave": "",
+        "nombre": "HUACHINERA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 32,
+    "fields": {
+        "clave": "",
+        "nombre": "HUASABAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 33,
+    "fields": {
+        "clave": "",
+        "nombre": "HUATABAMPO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 34,
+    "fields": {
+        "clave": "",
+        "nombre": "HUEPAC",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 35,
+    "fields": {
+        "clave": "",
+        "nombre": "IMURIS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 36,
+    "fields": {
+        "clave": "",
+        "nombre": "MAGDALENA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 37,
+    "fields": {
+        "clave": "",
+        "nombre": "MAZATAN",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 38,
+    "fields": {
+        "clave": "",
+        "nombre": "MOCTEZUMA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 39,
+    "fields": {
+        "clave": "",
+        "nombre": "NACO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 40,
+    "fields": {
+        "clave": "",
+        "nombre": "NACORI CHICO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 41,
+    "fields": {
+        "clave": "",
+        "nombre": "NACOZARI DE GARCIA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 42,
+    "fields": {
+        "clave": "",
+        "nombre": "NAVOJOA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 43,
+    "fields": {
+        "clave": "",
+        "nombre": "NOGALES",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 44,
+    "fields": {
+        "clave": "",
+        "nombre": "ONAVAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 45,
+    "fields": {
+        "clave": "",
+        "nombre": "OPODEPE",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 46,
+    "fields": {
+        "clave": "",
+        "nombre": "OQUITOA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 47,
+    "fields": {
+        "clave": "",
+        "nombre": "PITIQUITO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 48,
+    "fields": {
+        "clave": "",
+        "nombre": "PUERTO PE\u00d1ASCO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 49,
+    "fields": {
+        "clave": "",
+        "nombre": "QUIRIEGO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 50,
+    "fields": {
+        "clave": "",
+        "nombre": "RAYON",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 51,
+    "fields": {
+        "clave": "",
+        "nombre": "ROSARIO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 52,
+    "fields": {
+        "clave": "",
+        "nombre": "SAHUARIPA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 53,
+    "fields": {
+        "clave": "",
+        "nombre": "SAN FELIPE DE JESUS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 54,
+    "fields": {
+        "clave": "",
+        "nombre": "SAN JAVIER",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 55,
+    "fields": {
+        "clave": "",
+        "nombre": "SAN LUIS RIO COLORADO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 56,
+    "fields": {
+        "clave": "",
+        "nombre": "SAN MIGUEL DE HORCASITAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 57,
+    "fields": {
+        "clave": "",
+        "nombre": "SAN PEDRO DE LA CUEVA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 58,
+    "fields": {
+        "clave": "",
+        "nombre": "SANTA ANA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 59,
+    "fields": {
+        "clave": "",
+        "nombre": "SANTA CRUZ",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 60,
+    "fields": {
+        "clave": "",
+        "nombre": "SARIC",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 61,
+    "fields": {
+        "clave": "",
+        "nombre": "SOYOPA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 62,
+    "fields": {
+        "clave": "",
+        "nombre": "SUAQUI GRANDE",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 63,
+    "fields": {
+        "clave": "",
+        "nombre": "TEPACHE",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 64,
+    "fields": {
+        "clave": "",
+        "nombre": "TRINCHERAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 65,
+    "fields": {
+        "clave": "",
+        "nombre": "TUBUTAMA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 66,
+    "fields": {
+        "clave": "",
+        "nombre": "URES",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 67,
+    "fields": {
+        "clave": "",
+        "nombre": "VILLA HIDALGO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 68,
+    "fields": {
+        "clave": "",
+        "nombre": "VILLA PESQUEIRA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 69,
+    "fields": {
+        "clave": "",
+        "nombre": "YECORA",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 70,
+    "fields": {
+        "clave": "",
+        "nombre": "GENERAL PLUTARCO ELIAS CALLES",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 71,
+    "fields": {
+        "clave": "",
+        "nombre": "PLUTARCO ELIAS CALLES",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 72,
+    "fields": {
+        "clave": "",
+        "nombre": "BENITO JUAREZ",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 73,
+    "fields": {
+        "clave": "",
+        "nombre": "SAN IGNACIO RIO MUERTO",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 74,
+    "fields": {
+        "clave": "",
+        "nombre": "GUASIMAS",
+        "estado": 26
+    }
+},
+{
+    "model": "municipio.municipio",
+    "pk": 75,
+    "fields": {
+        "clave": "",
+        "nombre": "POTAM",
+        "estado": 26
+    }
+}
+]
