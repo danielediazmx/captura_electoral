@@ -1,0 +1,10 @@
+[
+{
+    "model": "estado.estado",
+    "pk": 26,
+    "fields": {
+        "clave": "",
+        "nombre": "Sonora"
+    }
+}
+]

@@ -1,0 +1,28 @@
+[
+{
+    "model": "persona.persona",
+    "pk": 2,
+    "fields": {
+        "nombre": "Danielx",
+        "apellidoPaterno": "Diaz",
+        "apellidoMaterno": "Lara",
+        "sexo": 1,
+        "fechaNacimiento": "1994-08-03",
+        "curp": "DIDE160626HSRZRVA5",
+        "clave_electoral": "0",
+        "direccion": null,
+        "calle_numero": "Bacadehuachi #401",
+        "colonia": "Arizona y Am\u00e9ricas",
+        "codigo_postal": "83103",
+        "estado": 26,
+        "municipio": 30,
+        "localidad": 1,
+        "correo": "danielediazmx@gmail.com",
+        "facebook": "danielediazmx",
+        "whatsapp": "(662) 329-5397",
+        "sector": 3,
+        "organismo": 4,
+        "nivel_confianza": 2
+    }
+}
+]

@@ -16,7 +16,7 @@ class Persona(models.Model):
     apellidoMaterno = models.CharField(max_length=100)
     sexo = models.IntegerField(choices=sexo, default=1)
     fechaNacimiento = models.DateField(null=False)
-    curp = models.CharField(max_length=150)
+    # curp = models.CharField(max_length=150)
     clave_electoral = models.CharField(max_length=30, default=00000000)
     direccion = models.CharField(max_length=250, blank=True, null=True)
     calle_numero = models.CharField(max_length=100, null=True)
