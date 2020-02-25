@@ -9,7 +9,7 @@ Icon
 static/admin
 static/admin-lte
 
-
+venv/
 # Thumbnails
 ._*
 
