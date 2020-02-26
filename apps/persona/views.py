@@ -28,12 +28,12 @@ class PersonaCreate(CreateView):
         userform = self.form_class(request.POST)
         if userform.is_valid():
             user = userform.save(commit=False)
-            messages.add_message(request, messages.SUCCESS, 'Se ha guardado el usuario con éxito')
+            messages.add_message(request, messages.SUCCESS, 'Se ha guardado el registro con éxito')
             user.save()
-            return redirect(self.get_success_url())
+            return redirect('/persona')
         else:
-            print(userform.errors)
-            return render(request, 'usuario/form.html', {'form': userform})
+            print('errors hmmm',userform.errors)
+            return render(request, 'persona/form.html', {'form': userform})
 
 
 

@@ -2,11 +2,10 @@ from django import forms
 from apps.persona.models import Persona
 from apps.organismo.models import Organismo
 from apps.sector.models import Sector
-from apps.ubicacion.estado.models import Estado
 
 
 class PersonaForm(forms.ModelForm):
-    estado = forms.ModelChoiceField(queryset=Estado.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))
+    # estado = forms.ModelChoiceField(queryset=Estado.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))
     sector = forms.ModelChoiceField(queryset=Sector.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
     organismo = forms.ModelChoiceField(queryset=Organismo.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
     
@@ -21,15 +20,18 @@ class PersonaForm(forms.ModelForm):
             'fechaNacimiento',
             # 'curp',
             'direccion',
-            'calle_numero',
+            'calle',
+            'numero',
             'colonia',
-            'codigo_postal',
-            'estado',
+            # 'codigo_postal',
+            # 'estado',
             'municipio',
-            'localidad',
+            # 'localidad',
             'correo',
             'facebook',
             'whatsapp',
+            'twitter',
+            'instagram',
             'sector',
             'organismo',
             'nivel_confianza'
@@ -43,15 +45,18 @@ class PersonaForm(forms.ModelForm):
             'fechaNacimiento': 'Fecha de Nacimiento',
             # 'curp': 'Curp',
             'direccion': 'Direccion',
-            'calle_numero': 'Calle y Número',
+            'calle': 'Calle',
+            'numero': 'Número',
             'colonia': 'Colonia',
-            'codigo_postal': 'Código Postal',
-            'estado': 'Estado',
+            # 'codigo_postal': 'Código Postal',
+            # 'estado': 'Estado',
             'municipio': 'Municipio',
-            'localidad': 'Localidad',
+            # 'localidad': 'Localidad',
             'correo': 'Correo',
             'facebook': 'Facebook',
             'whatsapp': 'Whatsapp',
+            'twitter':'Twitter',
+            'instagram': 'Instagram',
             'sector': 'Sector',
             'organismo': 'Organismo',
             'nivel_confianza':'Nivel de Confianza'
@@ -65,12 +70,15 @@ class PersonaForm(forms.ModelForm):
             'fechaNacimiento': forms.TextInput(attrs={'class': 'form-control'}),
             # 'curp': forms.TextInput(attrs={'class': 'form-control'}),
             'direccion': forms.TextInput(attrs={'class': 'form-control'}),
-            'calle_numero': forms.TextInput(attrs={'class': 'form-control'}),
+            'calle': forms.TextInput(attrs={'class': 'form-control'}),
+            'numero': forms.TextInput(attrs={'class': 'form-control'}),
             'colonia': forms.TextInput(attrs={'class': 'form-control'}),
-            'codigo_postal': forms.TextInput(attrs={'class': 'form-control'}),
+            # 'codigo_postal': forms.TextInput(attrs={'class': 'form-control'}),
             'municipio': forms.Select(attrs={'class': 'form-control'}),
-            'localidad': forms.Select(attrs={'class': 'form-control'}),
+            # 'localidad': forms.Select(attrs={'class': 'form-control'}),
             'correo': forms.TextInput(attrs={'class': 'form-control', 'type': 'email'}),
             'facebook': forms.TextInput(attrs={'class': 'form-control'}),
-            'whatsapp': forms.TextInput(attrs={'class': 'form-control'})
+            'whatsapp': forms.TextInput(attrs={'class': 'form-control'}),
+            'twitter': forms.TextInput(attrs={'class': 'form-control'}),
+            'instagram': forms.TextInput(attrs={'class': 'form-control'}),
         }

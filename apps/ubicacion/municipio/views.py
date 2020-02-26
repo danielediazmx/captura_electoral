@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
@@ -7,6 +7,7 @@ from apps.ubicacion.municipio.models import Municipio
 from apps.ubicacion.municipio.forms import MunicipioForm
 from django_filters.views import FilterView
 from captura_electoral.filters import filtroMunicipio
+from django.core import serializers
 
 
 # Create your views here.
@@ -36,3 +37,10 @@ def destroyMunicipio(request, id):
     localidad = Municipio.objects.filter(pk=id).first()
     localidad.delete()
     return JsonResponse({'type': 'success'})
+
+
+def GetMunicipioByZip(request):
+    zipCode = request.GET.get('zipCode')
+    municipios = Municipio.objects.filter(cp=zipCode).all() or []
+    response_data = serializers.serialize('json', municipios)
+    return HttpResponse(response_data, content_type='application/json')

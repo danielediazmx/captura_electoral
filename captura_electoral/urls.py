@@ -28,6 +28,7 @@ urlpatterns = [
     path('organismo/', include('apps.organismo.urls')),
     path('usuario/', include('apps.usuario.urls')),
     path('persona/', include('apps.persona.urls')),
-    path('dashboard/', include('apps.dashboard.urls'))
+    path('dashboard/', include('apps.dashboard.urls')),
+    path('municipio/', include('apps.ubicacion.municipio.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

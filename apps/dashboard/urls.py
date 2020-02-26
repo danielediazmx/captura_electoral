@@ -3,5 +3,5 @@ from django.urls import path
 from apps.dashboard.views import dashboardIndex
 
 urlpatterns = [
-    path('', dashboardIndex, name='dashboard_index'),
+    path('', login_required(dashboardIndex), name='dashboard_index'),
 ]

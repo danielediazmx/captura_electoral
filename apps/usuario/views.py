@@ -53,7 +53,7 @@ class UserUpdate(UpdateView):
         user_form = self.form_class(request.POST, instance=user)
         if user_form.is_valid():
             user_form.save()
-            return redirect(self.get_success_url())
+            return redirect('/usuario')
         else:
             messages.error(request, '¡Error!')
 
