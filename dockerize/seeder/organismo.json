@@ -3,7 +3,7 @@
     "model": "organismo.organismo",
     "pk": 1,
     "fields": {
-        "nombre": ""
+        "nombre": "Sin asignar"
     }
 },
 {

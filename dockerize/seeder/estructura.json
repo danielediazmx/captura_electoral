@@ -3,7 +3,7 @@
     "model": "estructura.estructura",
     "pk": 1,
     "fields": {
-        "nombre": ""
+        "nombre": "Sin asignar"
     }
 },
 {

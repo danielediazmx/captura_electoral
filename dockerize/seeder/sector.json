@@ -3,7 +3,7 @@
     "model": "sector.sector",
     "pk": 1,
     "fields": {
-        "nombre": ""
+        "nombre": "Sin asignar"
     }
 },
 {
