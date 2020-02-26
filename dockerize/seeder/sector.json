@@ -3,54 +3,61 @@
     "model": "sector.sector",
     "pk": 1,
     "fields": {
-        "nombre": "CNOP - CONFEDERACI\u00d3N NACIONAL DE ORGANIZACIONES POPULARES"
+        "nombre": ""
     }
 },
 {
     "model": "sector.sector",
     "pk": 2,
     "fields": {
-        "nombre": "CTM - CONFEDERACI\u00d3N DE TRABAJADORES MEXICANOS"
+        "nombre": "CNOP - CONFEDERACI\u00d3N NACIONAL DE ORGANIZACIONES POPULARES"
     }
 },
 {
     "model": "sector.sector",
     "pk": 3,
     "fields": {
-        "nombre": "CNC - CONDEFERACI\u00d2N NACIONAL CAMPESINA"
+        "nombre": "CTM - CONFEDERACI\u00d3N DE TRABAJADORES MEXICANOS"
     }
 },
 {
     "model": "sector.sector",
     "pk": 4,
     "fields": {
-        "nombre": "CROC - CONFEDERACI\u00d3N REVOLUCIONARIA DE OBREROS Y CAMPESINOS"
+        "nombre": "CNC - CONDEFERACI\u00d2N NACIONAL CAMPESINA"
     }
 },
 {
     "model": "sector.sector",
     "pk": 5,
     "fields": {
-        "nombre": "COR - CONFEDERACI\u00d3N OBRERA REVOLUCIONARIA"
+        "nombre": "CROC - CONFEDERACI\u00d3N REVOLUCIONARIA DE OBREROS Y CAMPESINOS"
     }
 },
 {
     "model": "sector.sector",
     "pk": 6,
     "fields": {
-        "nombre": "CCI - CENTRAL CAMPESINA INDEPENDIENTE"
+        "nombre": "COR - CONFEDERACI\u00d3N OBRERA REVOLUCIONARIA"
     }
 },
 {
     "model": "sector.sector",
     "pk": 7,
     "fields": {
-        "nombre": "CROM - CONFEDERACI\u00d3N REGIONAL OBRERA MEXICANA"
+        "nombre": "CCI - CENTRAL CAMPESINA INDEPENDIENTE"
     }
 },
 {
     "model": "sector.sector",
     "pk": 8,
+    "fields": {
+        "nombre": "CROM - CONFEDERACI\u00d3N REGIONAL OBRERA MEXICANA"
+    }
+},
+{
+    "model": "sector.sector",
+    "pk": 9,
     "fields": {
         "nombre": "UGOCM UNION GRAL. DE OBREROS Y CAMPESINOS DE MEXICO ``JACINTO LOPEZ``"
     }

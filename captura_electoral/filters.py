@@ -5,6 +5,7 @@ from django import forms
 from apps.ubicacion.municipio.models import Municipio
 from apps.sector.models import Sector
 from apps.organismo.models import Organismo
+from apps.estructura.models import Estructura
 
 
 class filtroUsuario(FilterSet):
@@ -47,6 +48,15 @@ class filtroOrganismo(FilterSet):
 
     class Meta:
         model = Organismo
+        labels = {'nombre': 'Nombre'}
+        fields = {'nombre'}
+
+
+class filtroEstructura(FilterSet):
+    nombre = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
+
+    class Meta:
+        model = Estructura
         labels = {'nombre': 'Nombre'}
         fields = {'nombre'}
 

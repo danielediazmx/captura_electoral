@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'apps.ubicacion.municipio',
     'apps.sector',
     'apps.organismo',
+    'apps.estructura',
     'apps.persona',
     'apps.usuario',
     'django_filters'

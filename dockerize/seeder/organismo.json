@@ -3,26 +3,33 @@
     "model": "organismo.organismo",
     "pk": 1,
     "fields": {
-        "nombre": "FUNDACI\u00d3N COLOSIO"
+        "nombre": ""
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 2,
     "fields": {
-        "nombre": "INSTITUTO DE FORMACI\u00d3N POL\u00cdTICA JES\u00daS REYES HEROLES"
+        "nombre": "FUNDACI\u00d3N COLOSIO"
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 3,
     "fields": {
-        "nombre": "RED J\u00d3VENES X M\u00c9XICO"
+        "nombre": "INSTITUTO DE FORMACI\u00d3N POL\u00cdTICA JES\u00daS REYES HEROLES"
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 4,
+    "fields": {
+        "nombre": "RED J\u00d3VENES X M\u00c9XICO"
+    }
+},
+{
+    "model": "organismo.organismo",
+    "pk": 5,
     "fields": {
         "nombre": "OMNPRI"
     }

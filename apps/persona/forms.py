@@ -2,12 +2,14 @@ from django import forms
 from apps.persona.models import Persona
 from apps.organismo.models import Organismo
 from apps.sector.models import Sector
+from apps.estructura.models import Estructura
 
 
 class PersonaForm(forms.ModelForm):
     # estado = forms.ModelChoiceField(queryset=Estado.objects.all(), widget=forms.Select(attrs={'class': 'form-control'}))
-    sector = forms.ModelChoiceField(queryset=Sector.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
-    organismo = forms.ModelChoiceField(queryset=Organismo.objects.all(), widget=forms.Select(attrs={'class':'form-control'}))
+    sector = forms.ModelChoiceField(queryset=Sector.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
+    organismo = forms.ModelChoiceField(queryset=Organismo.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
+    estructura = forms.ModelChoiceField(queryset=Estructura.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
     
     class Meta:
         model = Persona
@@ -26,6 +28,7 @@ class PersonaForm(forms.ModelForm):
             # 'codigo_postal',
             # 'estado',
             'municipio',
+            'municipio_text',
             # 'localidad',
             'correo',
             'facebook',
@@ -34,7 +37,10 @@ class PersonaForm(forms.ModelForm):
             'instagram',
             'sector',
             'organismo',
-            'nivel_confianza'
+            'nivel_confianza',
+            'estructura',
+            'nota',
+            'seccion_electoral',
         ]
 
         labels = {
@@ -59,7 +65,10 @@ class PersonaForm(forms.ModelForm):
             'instagram': 'Instagram',
             'sector': 'Sector',
             'organismo': 'Organismo',
-            'nivel_confianza':'Nivel de Confianza'
+            'estructura': 'Estructura',
+            'nivel_confianza':'Nivel de Confianza',
+            'nota':'Nota',
+            'seccion_electoral':'Sección Electoral',
         }
 
         widgets = {
@@ -81,4 +90,6 @@ class PersonaForm(forms.ModelForm):
             'whatsapp': forms.TextInput(attrs={'class': 'form-control'}),
             'twitter': forms.TextInput(attrs={'class': 'form-control'}),
             'instagram': forms.TextInput(attrs={'class': 'form-control'}),
+            'nota': forms.TextInput(attrs={'class': 'form-control'}),
+            'seccion_electoral': forms.TextInput(attrs={'class': 'form-control', 'type':'number'}),
         }

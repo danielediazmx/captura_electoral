@@ -22,7 +22,6 @@ class PersonaCreate(CreateView):
     template_name = 'persona/form.html'
     success_url = reverse_lazy('persona_index')
 
-
     def post(self, request, *args, **kwargs):
         self.object = self.get_object
         userform = self.form_class(request.POST)

@@ -1,0 +1,65 @@
+[
+{
+    "model": "estructura.estructura",
+    "pk": 1,
+    "fields": {
+        "nombre": ""
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 2,
+    "fields": {
+        "nombre": "Alcaldes 2018-2021"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 3,
+    "fields": {
+        "nombre": "Regidores 2018-2021"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 4,
+    "fields": {
+        "nombre": "Secretarios de Ayuntamiento"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 5,
+    "fields": {
+        "nombre": "Sindicos"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 6,
+    "fields": {
+        "nombre": "Legisladores"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 7,
+    "fields": {
+        "nombre": "Consejeros Municipales"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 8,
+    "fields": {
+        "nombre": "Afiliados"
+    }
+},
+{
+    "model": "estructura.estructura",
+    "pk": 9,
+    "fields": {
+        "nombre": "Consejeros Estatales"
+    }
+}
+]

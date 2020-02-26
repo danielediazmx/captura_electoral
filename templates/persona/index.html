@@ -23,11 +23,11 @@
                         <tbody>
                         {% for persona in filter.qs %}
                             <tr id="tr_{{ persona.pk }}">
-                                <td>{{ persona.nombre }} {{ persona.apellidoPaterno }} {{ persona.apellidoMaterno }}</td>
+                                <td>{{ persona.nombre|default_if_none:"" }} {{ persona.apellidoPaterno|default_if_none:"" }} {{ persona.apellidoMaterno|default_if_none:"" }}</td>
                                 <td>{{ persona.sector }}</td>
                                 <td>{{ persona.organismo }}</td>
-                                <td>{{ persona.whatsapp }}</td>
-                                <td>{{ persona.correo }}</td>
+                                <td>{{ persona.whatsapp|default_if_none:"" }}</td>
+                                <td>{{ persona.correo|default_if_none:"" }}</td>
                                 <td style="width: 20%;">
                                     <a href="{% url 'persona_edit' persona.id %}"
                                        class="btn btn-success btn-sm btn-raised" title="Editar"

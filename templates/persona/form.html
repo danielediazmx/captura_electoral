@@ -102,19 +102,26 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.seccion_electoral.label_tag }}</label>
+                                {{ form.seccion_electoral }}
+                                {{ form.seccion_electoral.errors }}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
                             <div class="form-group">
                                 <label>Colonia / Asentamiento:</label>
                                 <br>
-                                <input type="text" id="colonia" name="colonia" class="form-control" value="{{ form.instance.colonia|default_if_none:'' }}" readonly>
+                                <input type="text" id="colonia" name="colonia" class="form-control" value="{{ form.instance.colonia|default_if_none:'' }}">
                                 <ul id="ulColonias"></ul>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <div class="form-group">
                                 <label>Municipio:</label>
                                 <br>
-                                <input type="text" id="municipio" class="form-control" value="{{ form.instance.municipio }}" readonly>
+                                <input type="text" id="municipio" name="municipio_text" class="form-control" value="{{ form.instance.municipio_text }}">
                                 <input type="hidden" id="id_municipio" name="municipio" value="{{ form.instance.municipio.pk }}">
                             </div>
                         </div>
@@ -161,7 +168,7 @@
                         <div class="clearfix"></div>
                         <div class="col-sm-12">
                             <hr>
-                            <h4>Sector y Organización</h4>
+                            <h4>Filiación</h4>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
@@ -177,12 +184,26 @@
                                 {{ form.organismo.errors }}
                             </div>
                         </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>{{ form.estructura.label_tag }}</label>
+                                {{ form.estructura }}
+                                {{ form.estructura.errors }}
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="nivel_confianza" style="margin-bottom: 20px;">Nivel de Confianza: <span
                                         id="nivel_confianza_text">{{ form.instance.nivel_confianza }}</span></label>
                                 <input type="range" name="nivel_confianza" min="0" value="{{ form.instance.nivel_confianza }}" max="3" class="custom-range custom-range-teal"
                                     id="nivel_confianza">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>{{ form.nota.label_tag }}</label>
+                                {{ form.nota }}
+                                {{ form.nota.errors }}
                             </div>
                         </div>
                     </div>
@@ -294,7 +315,7 @@
         var m = document.forms["myForm"]["month"].value;
         var y = document.forms["myForm"]["year"].value;
 
-        if(d == null || d == ""){
+        /*if(d == null || d == ""){
             alert("El día de nacimiento es inválido.");
             return false;
         }
@@ -318,7 +339,7 @@
         if((m == 2) && d > 28) {
             alert("El mes seleccionado solo tiene 28 días");
             return false;
-        }
+        }*/
 
         $("#fechaNacimiento").val(`${y}-${m}-${d}`);
         return true;
