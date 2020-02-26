@@ -342,6 +342,9 @@
         }*/
 
         $("#fechaNacimiento").val(`${y}-${m}-${d}`);
+        
+        if (y == "" || m == "" || d == "")
+            $("#fechaNacimiento").val("");
         return true;
     }
 </script>
