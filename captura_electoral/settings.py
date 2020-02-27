@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'adminlte3_theme',
     'apps.dashboard',
     'apps.ubicacion.municipio',
+    'apps.ubicacion.localidad',
     'apps.sector',
     'apps.organismo',
     'apps.estructura',

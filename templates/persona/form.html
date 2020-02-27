@@ -196,8 +196,8 @@
                                 <label for="nivel_confianza" style="margin-bottom: 20px;">Nivel de Confianza:</label>
                                 <br>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn bg-olive {% if form.instance.nivel_confianza == 1 %}active{% endif %}">
-                                      <input type="radio" name="nivel_confianza" id="option1" value="1" autocomplete="off" {% if form.instance.nivel_confianza == 1 %}checked{% endif %}> 1
+                                    <label class="btn bg-olive {% if form.instance.nivel_confianza == 1 or form.instance.nivel_confianza == 0 %}active{% endif %}">
+                                      <input type="radio" name="nivel_confianza" id="option1" value="1" autocomplete="off" {% if form.instance.nivel_confianza == 1 or form.instance.nivel_confianza == 0 %}checked{% endif %}> 1
                                     </label>
                                     <label class="btn bg-olive {% if form.instance.nivel_confianza == 2 %}active{% endif %}">
                                       <input type="radio" name="nivel_confianza" id="option2" value="2" autocomplete="off" {% if form.instance.nivel_confianza == 2 %}checked{% endif %}>  2
@@ -267,6 +267,10 @@
 
         $("#nivel_confianza").on('input', function () {
             $("#nivel_confianza_text").html($(this).val());
+        });
+
+        $('input').keyup(function(){
+            $(this).val($(this).val().toUpperCase());
         });
 
         $("#codigo_postal").on('change', function() {
