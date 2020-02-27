@@ -6,6 +6,7 @@ from apps.ubicacion.municipio.models import Municipio
 from apps.sector.models import Sector
 from apps.organismo.models import Organismo
 from apps.estructura.models import Estructura
+from apps.persona.models import Persona
 
 
 class filtroUsuario(FilterSet):
@@ -22,16 +23,16 @@ class filtroUsuario(FilterSet):
 
 
 class filtroPersona(FilterSet):
-    nombre = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    apellidoPaterno = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    apellidoMaterno = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    curp = CharFilter(lookup_expr='icontains', widget=forms.TextInput(attrs={'class': 'form-control'}))
-    municipio = ModelChoiceFilter(queryset=Municipio.objects.all(),
-                                  widget=forms.Select(attrs={'class': 'form-control'}))
     sector = ModelChoiceFilter(queryset=Sector.objects.all(),
-                              widget=forms.Select(attrs={'class': 'form-control'}))
+                               widget=forms.Select(attrs={'class': 'form-control'}))
     organismo = ModelChoiceFilter(queryset=Organismo.objects.all(),
-                                     widget=forms.Select(attrs={'class': 'form-control'}))
+                                  widget=forms.Select(attrs={'class': 'form-control'}))
+    estructura = ModelChoiceFilter(queryset=Estructura.objects.all(),
+                                   widget=forms.Select(attrs={'class': 'form-control'}))
+
+    class Meta:
+        model = Persona
+        fields = ['sector', 'organismo', 'estructura']
 
 
 class filtroSector(FilterSet):
@@ -69,4 +70,3 @@ class filtroMunicipio(FilterSet):
         model = Municipio
         labels = {'clave': 'Clave', 'nombre': 'Nombre'}
         fields = {'clave', 'nombre'}
-
