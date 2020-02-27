@@ -2,7 +2,7 @@ from django import forms
 from apps.persona.models import Persona
 from apps.organismo.models import Organismo
 from apps.sector.models import Sector
-from apps.ubicacion.localidad.models import Localidad
+# from apps.ubicacion.localidad.models import Localidad
 from apps.estructura.models import Estructura
 
 
@@ -11,7 +11,7 @@ class PersonaForm(forms.ModelForm):
     sector = forms.ModelChoiceField(queryset=Sector.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
     organismo = forms.ModelChoiceField(queryset=Organismo.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
     estructura = forms.ModelChoiceField(queryset=Estructura.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
-    localidad = forms.ModelChoiceField(queryset=Localidad.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
+    # localidad = forms.ModelChoiceField(queryset=Localidad.objects.all(), widget=forms.Select(attrs={'class':'form-control'}), initial=1)
     
     class Meta:
         model = Persona
@@ -43,7 +43,7 @@ class PersonaForm(forms.ModelForm):
             'estructura',
             'nota',
             'seccion_electoral',
-            'localidad',
+            #'localidad',
         ]
 
         labels = {
@@ -72,7 +72,7 @@ class PersonaForm(forms.ModelForm):
             'nivel_confianza':'Nivel de Confianza',
             'nota':'Nota',
             'seccion_electoral':'Sección Electoral',
-            'localidad':'Municipio',
+            # 'localidad':'Municipio',
         }
 
         widgets = {
