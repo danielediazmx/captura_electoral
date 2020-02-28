@@ -121,7 +121,9 @@
                             <div class="form-group">
                                 <label>Municipio:</label>
                                 <br>
-                                <input type="text" id="municipio" name="municipio_text" class="form-control" value="{{ form.instance.municipio_text }}">
+                                {{ form.localidad }}
+                                {{ form.localidad.errors }}
+                                <!--<input type="text" id="municipio" name="municipio_text" class="form-control" value="{{ form.instance.municipio_text }}">-->
                                 <input type="hidden" id="id_municipio" name="municipio" value="{{ form.instance.municipio.pk }}">
                             </div>
                         </div>
@@ -304,6 +306,17 @@
                     $("#id_municipio").val(result[0].pk);
 
                     $("#municipio").val(nombreMunicipio);
+
+                    let idLocalidadFinal = null;
+                    $("#id_localidad option").each(function() {
+                        let idLocalidad = $(this).prop("value");
+                        let localidadName = $(this).html();
+                        if (localidadName.toLowerCase() == nombreMunicipio.toLowerCase() || localidadName.toLowerCase() == result[0].fields.municipio.toLowerCase()) {
+                            idLocalidadFinal = idLocalidad;
+                            $(this).attr("selected", "selected");
+                            $("#id_localidad").select2().trigger('change');
+                        }
+                    });
                 } else {
                     nombreMunicipio = "";
                     colonia = "";

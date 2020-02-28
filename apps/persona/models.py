@@ -3,6 +3,7 @@ from apps.ubicacion.municipio.models import Municipio
 from apps.sector.models import Sector
 from apps.organismo.models import Organismo
 from apps.estructura.models import Estructura
+from apps.ubicacion.localidad.models import Localidad
 # from apps.ubicacion.localidad.models import Localidad
 
 
@@ -24,7 +25,7 @@ class Persona(models.Model):
     # estado = models.ForeignKey(Estado, on_delete=models.CASCADE)
     municipio = models.ForeignKey(Municipio, on_delete=models.CASCADE, blank=True, null=True, default=None)
     municipio_text = models.CharField(max_length=100, blank=True, null=True, default='')
-    # localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE)
+    localidad = models.ForeignKey(Localidad, on_delete=models.CASCADE, default=None, blank=True, null=True)
     # seccion = models.ForeignKey(Seccion, on_delete=models.CASCADE, blank=True, null=True)
     correo = models.EmailField(max_length=100, null=True, blank=True, default='')
     facebook = models.CharField(max_length=100, null=True, blank=True, default='')

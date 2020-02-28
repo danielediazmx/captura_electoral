@@ -1,0 +1,527 @@
+[
+{
+    "model": "localidad.localidad",
+    "pk": 1,
+    "fields": {
+        "name": "ACONCHI"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 2,
+    "fields": {
+        "name": "AGUA PRIETA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 3,
+    "fields": {
+        "name": "ALAMOS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 4,
+    "fields": {
+        "name": "ALTAR"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 5,
+    "fields": {
+        "name": "ARIVECHI"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 6,
+    "fields": {
+        "name": "ARIZPE"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 7,
+    "fields": {
+        "name": "ATIL"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 8,
+    "fields": {
+        "name": "BACADEHUACHI"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 9,
+    "fields": {
+        "name": "BACANORA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 10,
+    "fields": {
+        "name": "BACERAC"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 11,
+    "fields": {
+        "name": "BACOACHI"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 12,
+    "fields": {
+        "name": "BACUM"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 13,
+    "fields": {
+        "name": "BANAMICHI"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 14,
+    "fields": {
+        "name": "BAVIACORA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 15,
+    "fields": {
+        "name": "BAVISPE"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 16,
+    "fields": {
+        "name": "BENJAMIN HILL"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 17,
+    "fields": {
+        "name": "CABORCA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 18,
+    "fields": {
+        "name": "CAJEME"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 19,
+    "fields": {
+        "name": "CANANEA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 20,
+    "fields": {
+        "name": "CARBO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 21,
+    "fields": {
+        "name": "COLORADA, LA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 22,
+    "fields": {
+        "name": "CUCURPE"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 23,
+    "fields": {
+        "name": "CUMPAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 24,
+    "fields": {
+        "name": "DIVISADEROS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 25,
+    "fields": {
+        "name": "EMPALME"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 26,
+    "fields": {
+        "name": "ETCHOJOA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 27,
+    "fields": {
+        "name": "FRONTERAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 28,
+    "fields": {
+        "name": "GRANADOS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 29,
+    "fields": {
+        "name": "GUAYMAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 30,
+    "fields": {
+        "name": "HERMOSILLO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 31,
+    "fields": {
+        "name": "HUACHINERA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 32,
+    "fields": {
+        "name": "HUASABAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 33,
+    "fields": {
+        "name": "HUATABAMPO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 34,
+    "fields": {
+        "name": "HUEPAC"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 35,
+    "fields": {
+        "name": "IMURIS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 36,
+    "fields": {
+        "name": "MAGDALENA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 37,
+    "fields": {
+        "name": "MAZATAN"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 38,
+    "fields": {
+        "name": "MOCTEZUMA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 39,
+    "fields": {
+        "name": "NACO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 40,
+    "fields": {
+        "name": "NACORI CHICO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 41,
+    "fields": {
+        "name": "NACOZARI DE GARCIA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 42,
+    "fields": {
+        "name": "NAVOJOA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 43,
+    "fields": {
+        "name": "NOGALES"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 44,
+    "fields": {
+        "name": "ONAVAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 45,
+    "fields": {
+        "name": "OPODEPE"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 46,
+    "fields": {
+        "name": "OQUITOA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 47,
+    "fields": {
+        "name": "PITIQUITO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 48,
+    "fields": {
+        "name": "PUERTO PEASCO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 49,
+    "fields": {
+        "name": "QUIRIEGO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 50,
+    "fields": {
+        "name": "RAYON"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 51,
+    "fields": {
+        "name": "ROSARIO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 52,
+    "fields": {
+        "name": "SAHUARIPA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 53,
+    "fields": {
+        "name": "SAN FELIPE DE JESUS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 54,
+    "fields": {
+        "name": "SAN JAVIER"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 55,
+    "fields": {
+        "name": "SAN LUIS RIO COLORADO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 56,
+    "fields": {
+        "name": "SAN MIGUEL DE HORCASITAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 57,
+    "fields": {
+        "name": "SAN PEDRO DE LA CUEVA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 58,
+    "fields": {
+        "name": "SANTA ANA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 59,
+    "fields": {
+        "name": "SANTA CRUZ"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 60,
+    "fields": {
+        "name": "SARIC"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 61,
+    "fields": {
+        "name": "SOYOPA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 62,
+    "fields": {
+        "name": "SUAQUI GRANDE"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 63,
+    "fields": {
+        "name": "TEPACHE"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 64,
+    "fields": {
+        "name": "TRINCHERAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 65,
+    "fields": {
+        "name": "TUBUTAMA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 66,
+    "fields": {
+        "name": "URES"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 67,
+    "fields": {
+        "name": "VILLA HIDALGO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 68,
+    "fields": {
+        "name": "VILLA PESQUEIRA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 69,
+    "fields": {
+        "name": "YECORA"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 70,
+    "fields": {
+        "name": "GENERAL PLUTARCO ELIAS CALLES"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 71,
+    "fields": {
+        "name": "PLUTARCO ELIAS CALLES"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 72,
+    "fields": {
+        "name": "BENITO JUAREZ"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 73,
+    "fields": {
+        "name": "SAN IGNACIO RIO MUERTO"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 74,
+    "fields": {
+        "name": "GUASIMAS"
+    }
+},
+{
+    "model": "localidad.localidad",
+    "pk": 75,
+    "fields": {
+        "name": "POTAM"
+    }
+}
+]
