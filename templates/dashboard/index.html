@@ -1,69 +1,67 @@
 {% extends 'index.html' %}
 {% block content %}
+    <style>
+        .abreviar {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            {#white-space: nowrap;#}
+            {#text-overflow:ellipsis;#}
+        }
+    </style>
+    <h3>Sectores</h3>
     <div class="row">
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-                <div class="inner">
-                    <h3>350</h3>
-
-                    <p>Comité Estatal</p>
+        <div class="clearfix"></div>
+        {% for sector in sectores %}
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+                    <div class="info-box-content abreviar">
+                        <span class="info-box-text">{{ sector.nombre }}</span>
+                        <span class="info-box-number">{{ sector.getRegistros }}</span>
+                    </div>
+                    <!-- /.info-box-content -->
                 </div>
-                <div class="icon">
-                    <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">Ver Más <i class="fas fa-arrow-circle-right"></i></a>
+                <!-- /.info-box -->
             </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-                <div class="inner">
-                    <h3>150</h3>
-
-                    <p>Comités Municipales</p>
+        {% endfor %}
+    </div>
+    <h3>Organismos</h3>
+    <div class="row">
+        <div class="clearfix"></div>
+        {% for organismo in organismos %}
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+                    <div class="info-box-content abreviar">
+                        <span class="info-box-text">{{ organismo.nombre }}</span>
+                        <span class="info-box-number">{{ organismo.getRegistros }}</span>
+                    </div>
+                    <!-- /.info-box-content -->
                 </div>
-                <div class="icon">
-                 <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">Ver Más <i class="fas fa-arrow-circle-right"></i></a>
+                <!-- /.info-box -->
             </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-                <div class="inner">
-                    <h3>86</h3>
-
-                    <p>Sectores</p>
+        {% endfor %}
+    </div>
+    <h3>Estructuras</h3>
+    <div class="row">
+        {% for estructura in estructuras %}
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+                    <div class="info-box-content abreviar">
+                        <span class="info-box-text">{{ estructura.nombre }}</span>
+                        <span class="info-box-number">{{ estructura.getRegistros }}</span>
+                    </div>
+                    <!-- /.info-box-content -->
                 </div>
-                <div class="icon">
-                    <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">Ver Más <i class="fas fa-arrow-circle-right"></i></a>
+                <!-- /.info-box -->
             </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-                <div class="inner">
-                    <h3>225</h3>
-
-                    <p>Organismos</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">Ver Más <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <!-- ./col -->
+        {% endfor %}
     </div>
     <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517862.7683534664!2d-112.14533718436935!3d29.360346295417248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86982969e74dd20f%3A0xcd56ff1afcbbe374!2sSonora!5e0!3m2!1ses!2smx!4v1581631694105!5m2!1ses!2smx" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517862.7683534664!2d-112.14533718436935!3d29.360346295417248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86982969e74dd20f%3A0xcd56ff1afcbbe374!2sSonora!5e0!3m2!1ses!2smx!4v1581631694105!5m2!1ses!2smx"
+                width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
 {% endblock %}
