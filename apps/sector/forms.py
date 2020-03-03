@@ -7,13 +7,16 @@ class SectorForm(forms.ModelForm):
         model = Sector
 
         fields = {
-            'nombre'
+            'nombre',
+            'logo'
         }
 
         labels = {
-            'nombre': 'Nombre'
+            'nombre': 'Nombre',
+            'logo': 'Logo'
         }
 
         widgets = {
             'nombre': forms.TextInput(attrs={'class': 'form-control', 'autofocus': 'autofocus'}),
+            'logo': forms.TextInput(attrs={'class': 'form-control', 'type':'file'})
         }

@@ -7,13 +7,16 @@ class EstructuraForm(forms.ModelForm):
         model = Estructura
 
         fields = {
-            'nombre'
+            'nombre',
+            'logo'
         }
 
         labels = {
-            'nombre': 'Nombre'
+            'nombre': 'Nombre',
+            'logo': 'Logo'
         }
 
         widgets = {
-            'nombre': forms.TextInput(attrs={'class': 'form-control', 'autofocus':'autofocus'}),
+            'nombre': forms.TextInput(attrs={'class': 'form-control', 'autofocus': 'autofocus'}),
+            'logo': forms.FileInput(attrs={'class': 'form-control', 'type':'file'})
         }
