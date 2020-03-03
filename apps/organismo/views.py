@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
 from apps.organismo.models import Organismo
@@ -22,6 +22,14 @@ class OrganismoCreate(CreateView):
     form_class = OrganismoForm
     template_name = 'organismo/form.html'
     success_url = reverse_lazy('organismo_index')
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect(self.success_url)
+        else:
+            return render(request, self.template_name, {'form': form})
 
 
 class OrganismoUpdate(UpdateView):

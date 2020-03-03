@@ -10,6 +10,9 @@ class Organismo(models.Model):
     def __str__(self):
         return '{}'.format(self.nombre)
 
+    def __unicode__(self):
+        return str(self.logo)
+
     def getRegistros(self):
         from apps.persona.models import Persona as Per
         personas = Per.objects.filter(organismo_id=self.pk)

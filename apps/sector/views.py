@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
@@ -23,6 +23,17 @@ class SectorCreate(CreateView):
     form_class = SectorForm
     template_name = 'sector/form.html'
     success_url = reverse_lazy('sector_index')
+
+    def post(self, request, *args, **kwargs):
+        form = self.form_class(request.POST, request.FILES)
+        if form.is_valid():
+            print('dasdsa1212312312d')
+            sector = form.save(commit=False)
+            sector.logo = sector.logo
+            form.save()
+            return redirect(self.success_url)
+        else:
+            return render(request, self.template_name, {'form': form})
 
 
 class SectorUpdate(UpdateView):
