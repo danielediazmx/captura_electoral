@@ -40,3 +40,5 @@ env-file==2019.4.13
 django-filter==2.2.0
 mysqlclient==1.4.2.post1
 django-filters==0.2.1
+Pillow==7.0.0
+
