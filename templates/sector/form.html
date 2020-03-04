@@ -10,7 +10,7 @@
                     <h3>Nuevo Sector</h3>
                     {% endif %}
                 </div>
-                <form role="form" method="post">
+                <form role="form" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="card-body">
                         {{ form.as_p }}

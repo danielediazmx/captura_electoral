@@ -18,5 +18,5 @@ class OrganismoForm(forms.ModelForm):
 
         widgets = {
             'nombre': forms.TextInput(attrs={'class': 'form-control', 'autofocus': 'autofocus'}),
-            'logo': forms.FileInput(attrs={'class': 'form-control', 'type':'file'})
+            'logo': forms.FileInput(attrs={'class': 'form-control'})
         }

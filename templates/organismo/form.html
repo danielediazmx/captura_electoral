@@ -6,7 +6,7 @@
                 <div class="card-header">
                     <h3>Organismos</h3>
                 </div>
-                <form role="form" method="post">
+                <form role="form" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="card-body">
                         {{ form.as_p }}

@@ -23,14 +23,6 @@ class OrganismoCreate(CreateView):
     template_name = 'organismo/form.html'
     success_url = reverse_lazy('organismo_index')
 
-    def post(self, request, *args, **kwargs):
-        form = self.form_class(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect(self.success_url)
-        else:
-            return render(request, self.template_name, {'form': form})
-
 
 class OrganismoUpdate(UpdateView):
     model = Organismo
