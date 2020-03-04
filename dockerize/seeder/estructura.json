@@ -3,63 +3,72 @@
     "model": "estructura.estructura",
     "pk": 1,
     "fields": {
-        "nombre": "Sin asignar"
+        "nombre": "Sin asignar",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 2,
     "fields": {
-        "nombre": "Alcaldes 2018-2021"
+        "nombre": "Alcaldes 2018-2021",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 3,
     "fields": {
-        "nombre": "Regidores 2018-2021"
+        "nombre": "Regidores 2018-2021",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 4,
     "fields": {
-        "nombre": "Secretarios de Ayuntamiento"
+        "nombre": "Secretarios de Ayuntamiento",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 5,
     "fields": {
-        "nombre": "Sindicos"
+        "nombre": "Sindicos",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 6,
     "fields": {
-        "nombre": "Legisladores"
+        "nombre": "Legisladores",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 7,
     "fields": {
-        "nombre": "Consejeros Municipales"
+        "nombre": "Consejeros Municipales",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 8,
     "fields": {
-        "nombre": "Afiliados"
+        "nombre": "Afiliados",
+         "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "estructura.estructura",
     "pk": 9,
     "fields": {
-        "nombre": "Consejeros Estatales"
+        "nombre": "Consejeros Estatales",
+         "logo": "logos/sector/default.jpg"
     }
 }
 ]

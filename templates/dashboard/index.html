@@ -6,8 +6,16 @@
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
-            {#white-space: nowrap;#}
-            {#text-overflow:ellipsis;#}
+        {#white-space: nowrap;#}{#text-overflow:ellipsis;#}
+        }
+
+        .logo {
+            width: 80px;
+            height: 100%;
+        }
+
+        .info-box.thumbnails {
+            min-height: 125px;
         }
     </style>
     <h3>Sectores</h3>
@@ -15,8 +23,8 @@
         <div class="clearfix"></div>
         {% for sector in sectores %}
             <div class="col-md-3 col-sm-6 col-12">
-                <div class="info-box">
-                    <img src="/media/{{ sector.logo }}" width="150px">
+                <div class="info-box thumbnails">
+                    <img class="logo" src="/media/{{ sector.logo }}">
                     <div class="info-box-content abreviar">
                         <span class="info-box-text">{{ sector.nombre }}</span>
                         <span class="info-box-number">{{ sector.getRegistros }}</span>
@@ -33,7 +41,7 @@
         {% for organismo in organismos %}
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="info-box">
-                    <img src="/media/{{ organismo.logo }}" width="150px">
+                    <img class="logo" src="/media/{{ organismo.logo }}">
                     <div class="info-box-content abreviar">
                         <span class="info-box-text">{{ organismo.nombre }}</span>
                         <span class="info-box-number">{{ organismo.getRegistros }}</span>
@@ -49,7 +57,7 @@
         {% for estructura in estructuras %}
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="info-box">
-                    <img src="/media/{{ estructura.logo }}" width="150px">
+                    <img class="logo" src="/media/{{ estructura.logo }}">
                     <div class="info-box-content abreviar">
                         <span class="info-box-text">{{ estructura.nombre }}</span>
                         <span class="info-box-number">{{ estructura.getRegistros }}</span>

@@ -3,35 +3,40 @@
     "model": "organismo.organismo",
     "pk": 1,
     "fields": {
-        "nombre": "Sin asignar"
+        "nombre": "Sin asignar",
+        "logo": "logos/organismo/default.jpg"
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 2,
     "fields": {
-        "nombre": "FUNDACI\u00d3N COLOSIO"
+        "nombre": "FUNDACI\u00d3N COLOSIO",
+        "logo": "logos/organismo/FUNDACIÓN COLOSIO.png"
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 3,
     "fields": {
-        "nombre": "INSTITUTO DE FORMACI\u00d3N POL\u00cdTICA JES\u00daS REYES HEROLES"
+        "nombre": "INSTITUTO DE FORMACI\u00d3N POL\u00cdTICA JES\u00daS REYES HEROLES",
+        "logo": "logos/organismo/INSTITUTO DE FORMACIÓN POLÍTICA JESÚS REYES HEROLES.png"
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 4,
     "fields": {
-        "nombre": "RED J\u00d3VENES X M\u00c9XICO"
+        "nombre": "RED J\u00d3VENES X M\u00c9XICO",
+        "logo": "logos/organismo/RED JÓVENES X MÉXICO.jpg"
     }
 },
 {
     "model": "organismo.organismo",
     "pk": 5,
     "fields": {
-        "nombre": "OMNPRI"
+        "nombre": "ONMPRI",
+        "logo": "logos/organismo/ONMPRI.png"
     }
 }
 ]

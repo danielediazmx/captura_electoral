@@ -3,63 +3,72 @@
     "model": "sector.sector",
     "pk": 1,
     "fields": {
-        "nombre": "Sin asignar"
+        "nombre": "Sin asignar",
+        "logo": "logos/sector/default.jpg"
     }
 },
 {
     "model": "sector.sector",
     "pk": 2,
     "fields": {
-        "nombre": "CNOP - CONFEDERACI\u00d3N NACIONAL DE ORGANIZACIONES POPULARES"
+        "nombre": "CNOP - CONFEDERACI\u00d3N NACIONAL DE ORGANIZACIONES POPULARES",
+        "logo": "logos/sector/CNOP - CONFEDERACIÓN NACIONAL DE ORGANIZACIONES POPULARES.png"
     }
 },
 {
     "model": "sector.sector",
     "pk": 3,
     "fields": {
-        "nombre": "CTM - CONFEDERACI\u00d3N DE TRABAJADORES MEXICANOS"
+        "nombre": "CTM - CONFEDERACI\u00d3N DE TRABAJADORES MEXICANOS",
+        "logos": "logos/sector/CTM - CONFEDERACIÓN DE TRABAJADORES MEXICANOS.jpg"
     }
 },
 {
     "model": "sector.sector",
     "pk": 4,
     "fields": {
-        "nombre": "CNC - CONDEFERACI\u00d2N NACIONAL CAMPESINA"
+        "nombre": "CNC - CONDEFERACI\u00d2N NACIONAL CAMPESINA",
+        "logo": "logos/sector/CNC - CONDEFERACIÒN NACIONAL CAMPESINA.png"
     }
 },
 {
     "model": "sector.sector",
     "pk": 5,
     "fields": {
-        "nombre": "CROC - CONFEDERACI\u00d3N REVOLUCIONARIA DE OBREROS Y CAMPESINOS"
+        "nombre": "CROC - CONFEDERACI\u00d3N REVOLUCIONARIA DE OBREROS Y CAMPESINOS",
+        "logo": "logos/sector/CROC - CONFEDERACIÓN REVOLUCIONARIA DE OBREROS Y CAMPESINOS.jpg"
     }
 },
 {
     "model": "sector.sector",
     "pk": 6,
     "fields": {
-        "nombre": "COR - CONFEDERACI\u00d3N OBRERA REVOLUCIONARIA"
+        "nombre": "COR - CONFEDERACI\u00d3N OBRERA REVOLUCIONARIA",
+        "logo": "logos/sector/COR - CONFEDERACIÓN OBRERA REVOLUCIONARIA.jpeg"
     }
 },
 {
     "model": "sector.sector",
     "pk": 7,
     "fields": {
-        "nombre": "CCI - CENTRAL CAMPESINA INDEPENDIENTE"
+        "nombre": "CCI - CENTRAL CAMPESINA INDEPENDIENTE",
+        "logo": "logos/sector/CCI - CENTRAL CAMPESINA INDEPENDIENTE.jpg"
     }
 },
 {
     "model": "sector.sector",
     "pk": 8,
     "fields": {
-        "nombre": "CROM - CONFEDERACI\u00d3N REGIONAL OBRERA MEXICANA"
+        "nombre": "CROM - CONFEDERACI\u00d3N REGIONAL OBRERA MEXICANA",
+        "logo": "logos/sector/CROM - CONFEDERACIÓN REGIONAL OBRERA MEXICANA.jpeg"
     }
 },
 {
     "model": "sector.sector",
     "pk": 9,
     "fields": {
-        "nombre": "UGOCM UNION GRAL. DE OBREROS Y CAMPESINOS DE MEXICO ``JACINTO LOPEZ``"
+        "nombre": "UGOCM UNION GRAL. DE OBREROS Y CAMPESINOS DE MEXICO ``JACINTO LOPEZ``",
+        "logo": "logos/sector/UGOCM UNION GRAL. DE OBREROS Y CAMPESINOS DE MEXICO ``JACINTO LOPEZ``.jpg"
     }
 }
 ]
