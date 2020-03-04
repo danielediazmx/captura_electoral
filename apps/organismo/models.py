@@ -8,9 +8,13 @@ from django.db import models
 def renombrar(self, filename):
     nombre = self.nombre
     extension = os.path.splitext(filename)[1]
-    return 'logos/organismo/{nombre}{ext}'.format(
-        nombre=nombre,
-        ext=extension)
+    if (extension):
+        return 'logos/organismo/{nombre}{ext}'.format(
+            nombre=nombre,
+            ext=extension)
+    else:
+        return 'logos/organismo/default.jpg'
+
 
 class Organismo(models.Model):
     nombre = models.CharField(max_length=100)
