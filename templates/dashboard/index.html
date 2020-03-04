@@ -16,7 +16,7 @@
         {% for sector in sectores %}
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="info-box">
-                    <img src="media/{{ sector.logo }}" width="150px">
+                    <img src="/media/{{ sector.logo }}" width="150px">
                     <div class="info-box-content abreviar">
                         <span class="info-box-text">{{ sector.nombre }}</span>
                         <span class="info-box-number">{{ sector.getRegistros }}</span>
@@ -33,7 +33,7 @@
         {% for organismo in organismos %}
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="info-box">
-                    <img src="media/{{ organismo.logo }}" width="150px">
+                    <img src="/media/{{ organismo.logo }}" width="150px">
                     <div class="info-box-content abreviar">
                         <span class="info-box-text">{{ organismo.nombre }}</span>
                         <span class="info-box-number">{{ organismo.getRegistros }}</span>
@@ -49,7 +49,7 @@
         {% for estructura in estructuras %}
             <div class="col-md-3 col-sm-6 col-12">
                 <div class="info-box">
-                    <img src="media/{{ estructura.logo }}" width="150px">
+                    <img src="/media/{{ estructura.logo }}" width="150px">
                     <div class="info-box-content abreviar">
                         <span class="info-box-text">{{ estructura.nombre }}</span>
                         <span class="info-box-number">{{ estructura.getRegistros }}</span>
