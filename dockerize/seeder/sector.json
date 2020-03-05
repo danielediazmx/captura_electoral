@@ -44,7 +44,7 @@
     "pk": 6,
     "fields": {
         "nombre": "COR - CONFEDERACI\u00d3N OBRERA REVOLUCIONARIA",
-        "logo": "logos/sector/COR - CONFEDERACIÓN OBRERA REVOLUCIONARIA.png"
+        "logo": "logos/sector/COR - CONFEDERACIÓN OBRERA REVOLUCIONARIA.jpeg"
     }
 },
 {
@@ -69,6 +69,14 @@
     "fields": {
         "nombre": "UGOCM UNION GRAL. DE OBREROS Y CAMPESINOS DE MEXICO ``JACINTO LOPEZ``",
         "logo": "logos/sector/UGOCM UNION GRAL. DE OBREROS Y CAMPESINOS DE MEXICO ``JACINTO LOPEZ``.jpg"
+    }
+},
+    {
+    "model": "sector.sector",
+    "pk": 10,
+    "fields": {
+        "nombre": "CORRIENTE CRÍTICA",
+        "logo": "logos/sector/CORRIENTE CRITICA.jpeg"
     }
 }
 ]
